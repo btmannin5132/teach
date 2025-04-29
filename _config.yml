@@ -1,2 +1,24 @@
 title: "Ben Manning's Teaching Portfolio"
 theme: minima
+markdown: kramdown
+
+# Optional: enable navigation
+show_excerpts: true
+paginate: 5
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+
+# Navigation bar links
+minima:
+  social_links:
+    - { platform: github, user_url: "https://github.com/yourusername" }
+
+# Create a navigation menu
+nav:
+  - title: "Home"
+    url: /
+  - title: "Courses"
+    url: /courses/
+  - title: "Materials"
+    url: /materials/
