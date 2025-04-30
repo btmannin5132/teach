@@ -3,8 +3,11 @@ layout: home
 title: Welcome to my Teaching Portfolio
 
 ---
+<p>
+  <img src="/assets/images/me.jpg" alt="Ben Manning" style="float:left; margin-right: 15px; width:150px;">
+  ### Throughout this document, you can find my resume, personal teaching philosophy, and my answers to essential questions that teachers should consider. Look through the sections to see different lesson plans and assessments that I have made and am very eager to implement in the near future. 
+</p>
 
-### Throughout this document, you can find my resume, personal teaching philosophy, and my answers to essential questions that teachers should consider. Look through the sections to see different lesson plans and assessments that I have made and am very eager to implement in the near future. 
 
 I am originally from De Pere, Wisconsin, where I graduated from De Pere High School in 2013.  During my high school career, I was heavily involved in our local robotics team, and the Boy Scouts of America.  Between these two organizations, I developed a passion for science, and nature and I wanted to find a way to share this passion with everyone I could.  I first did this by becoming a camp counselor at Bear Paw Scout Camp.  Over my two years as a counselor, and two years as the area director of Outdoor Skills, I taught over ten different merit badges to thousands of scouts and scouters.  From this experience, my passion for teaching was founded.
 
