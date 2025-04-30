@@ -1,7 +1,0 @@
-format: jb-book
-root: index
-
-chapters:
-  - file: phd/graduate-competencies/graduate-competencies
-  - file: covid/covid
-
