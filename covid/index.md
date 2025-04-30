@@ -23,7 +23,7 @@ The additional rolls of filament that have not been used have gone to good use, 
   Our donors:
 
 
-<span style="text-align: center; font-weight: bold;">
+<span style="text-align: center; font-weight: bold;font-size: 1.2em;">
 
 Allcox Family
 
