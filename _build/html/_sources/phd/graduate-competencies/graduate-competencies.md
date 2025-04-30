@@ -8,7 +8,7 @@ permalink: /phd/graduate-competencies/
 
 ## Teach Engineering
 
-As an individual that is pursuing a PhD in how we as a society can better teach and develop engineers, it makes sense that I should be a leader in this space.  While it is a solemn responsibility to help teach and train other leaders to develop new and cutting-edge curriculum that will help form our future engineers and scientists, I should also be comfortable teaching and interacting with the students directly, whether they are just learning what engineering is in elementary school, to those pursuing advanced degrees.
+As an individual that is pursuing a PhD in how we as a society can better teach and develop engineers, it makes sense that I should be a leader in this space.  While it is a solemn responsibility to help teach and train other leaders to develop new and cutting-edge curriculum that will help form our future engineers and scientists, I should also be comfortable teaching and interacting with the students directly, whether they are just learning what engineering is in elementary school, to those pursuing advanced degrees.  
 
 Indirectly, I have been developing myself in this competency my entire professional life.  Even when I was in high school, I was learning how to effectively teach science and engineering principles to youth in the Boy Scouts of America.  After high school, I would argue my undergraduate experience at Michigan Technological University a success much in part to my teaching roles in the physics department, where I was a teaching assistant and lab manager for our undergraduate instructional labs.  
 
