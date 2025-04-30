@@ -4,7 +4,7 @@ title: Welcome to my Teaching Portfolio
 
 ---
 <p>
-  <img src="assets/images/me.jpg" alt="Ben Manning" style="float:left; margin-right: 15px; width:150px;">
+  <img src="assets/images/me.jpg" alt="Ben Manning" style="float:right; margin-right: 15px; width:150px;">
    <span style="color: darkblue; font-weight: bold;">
   Throughout this document, you can find my resume, personal teaching philosophy, and my answers to essential questions that teachers should consider. Look through the sections to see different lesson plans and assessments that I have made and am very eager to implement in the near future. 
     </span>
