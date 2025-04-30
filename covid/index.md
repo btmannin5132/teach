@@ -23,6 +23,9 @@ The additional rolls of filament that have not been used have gone to good use, 
   Our donors:
 
 
+
+</p>
+
 <span style="text-align: center; font-weight: bold;font-size: 1.2em;">
 
 Allcox Family
@@ -110,6 +113,5 @@ Wolfe Family
 Wright Family
 
 Anonymous Donors: 3
-</span>
-</p>
 
+</span>

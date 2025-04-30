@@ -24,3 +24,9 @@ nav:
     url: /materials/
   - title: "COVID-19"
     url: /covid/
+
+  - title: "PhD"
+    url: /phd/
+
+  - title: "Graduate Competencies"
+    url: /phd/graduate-competencies
