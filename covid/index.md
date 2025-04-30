@@ -13,3 +13,55 @@ To everyone that has donated to help us be successful in this project, we cannot
 
 The additional rolls of filament that have not been used (yet) will go to good use, as they will be used to educate STEAM students in Georgia.  There have also been requests from local schools for us to produce more (1500+) shields and masks for teachers, students and the countless support staff that make our schools functional.
 
+
+<p>
+  <img src="assets/images/covprint.jpg" alt="Printer setup in my garage" style="float:right; margin-right: 15px; width:300px;">
+  <img src="assets/images/covus.jpg" alt="Amanda and I with the products" style="float:left; margin-right: 15px; width:300px;">
+   
+</p>
+
+
+### Our donors:
+Allcox Family
+Amber W
+Ann E
+Anna P
+Becky P
+Christopher O
+Cieslewicz Family
+Dahlke Family
+Davidhizar Family
+Denison Family
+Dylan C
+Ellen K
+Ginger C
+Greathouse Family
+Heidi B
+Jennifer H
+Josh D
+Judy S
+Karen S
+Kathy F
+Kellie H
+Kendra G
+Kolash Family
+Laurie N
+Lori W
+Manning Family
+Mary P
+Mary W
+Nancy W
+Neville Family
+Pat W
+Pat D
+Paul L
+Rachel R
+Rebekah B
+Stacey S
+Tessa B
+Todd M
+Wanda M
+White Family
+Wolfe Family
+Wright Family
+Anonymous Donors: 3
