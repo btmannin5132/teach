@@ -16,8 +16,8 @@ The additional rolls of filament that have not been used have gone to good use, 
 
 
 <p>
-  <img src="../_static/assets/images/covprint.jpg" alt="Printer setup in my garage" style="float:right; margin-right: 15px; width:300px;">
-  <img src="../_static/assets/images/covus.jpg" alt="Amanda and I with the products" style="float:left; margin-right: 15px; width:300px;">
+  <img src="assets/images/covprint.jpg" alt="Printer setup in my garage" style="float:right; margin-right: 15px; width:300px;">
+  <img src="assets/images/covus.jpg" alt="Amanda and I with the products" style="float:left; margin-right: 15px; width:300px;">
 </p>
 
 <p style="text-align: center; font-weight: bold; font-size: 2em;">

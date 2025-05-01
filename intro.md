@@ -5,23 +5,24 @@ title: Welcome to my Teaching Portfolio
 ---
 # Welcome
 
-**Throughout this document, you can find my resume, personal teaching philosophy, and my answers to essential questions that teachers should consider. Look through the sections to see different lesson plans and assessments that I have made and am very eager to implement in the near future.**
-
 <p>
-  <img src="_static/assets/images/me.jpg" alt="Ben Manning" style="float:right; margin-right: 15px; width:250px;">
+  <img src="assets/images/me.jpg" alt="Ben Manning" style="float:right; margin-right: 15px; width:250px;">
+   <span style="color: darkblue; font-weight: bold;">
+  Throughout this document, you can find my resume, personal teaching philosophy, and my answers to essential questions that teachers should consider. Look through the sections to see different lesson plans and assessments that I have made and am very eager to implement in the near future. 
+    </span>
 </p>
 
 
 I am originally from De Pere, Wisconsin, where I graduated from De Pere High School in 2013.  During my high school career, I was heavily involved in our local robotics team, and the Boy Scouts of America.  Between these two organizations, I developed a passion for science, and nature and I wanted to find a way to share this passion with everyone I could.  I first did this by becoming a camp counselor at Bear Paw Scout Camp.  Over my two years as a counselor, and two years as the area director of Outdoor Skills, I taught over ten different merit badges to thousands of scouts and scouters.  From this experience, my passion for teaching was founded.
 
 <p>
-  <img src="_static/assets/images/sps1.jpg" alt="Ben Manning" style="float:left; margin-right: 15px; width:200px;">
+  <img src="assets/images/sps1.jpg" alt="Ben Manning" style="float:left; margin-right: 15px; width:200px;">
 
 After high School, I attended Michigan Technological University, where I majored in physics and graduated in 2017. During my time there, I was a Physics Demonstration Specialist, and the Teaching Lab Manager for the physics department.
 
 
 For these positions, I led  a  small  group of  students to  make sure that the physics teaching labs were  set up on time for students, and maintained the equipment for the labs. I also helped design and build physics demonstrations that are used during departmental  lectures.  Through the Michigan Tech chapter of The Society of Physics Students, I was involved with many student outreach programs, where we would bring physics demonstrations and help get young students and their families interested in STEM. Some demonstrations involved showing properties of friction (Top), to showing how the air around us exerts a lot of pressure (Bottom).  I was also involved with the Michigan Science Teaching and Assessment Reform (Mi-STAR) which seeks to develop a more integrated science curriculum for middle-grade students (grades 6-8).  I focused on a lesson that involved showing the change in potential and kinetic energy of a pendulum, and finding ways it would be able to be executed in low-income schools.  The content of this lesson can be found by going to the Lessons and Assessments Tab.
-<img src="_static/assets/images/sps2.jpg" alt="Ben Manning" style="float:left; margin-right: 15px; width:200px;">
+<img src="assets/images/sps2.jpg" alt="Ben Manning" style="float:left; margin-right: 15px; width:200px;">
  
 </p>
  
