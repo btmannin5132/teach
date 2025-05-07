@@ -2,27 +2,28 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: pages/index
+root: index
+
 chapters:
 - url: https://btmannin5132.github.io/teach/_static/assets/documents/Manning_Benjamin_Resume_Gen.pdf
   title: "Resume"
 
-- file: phd/phd
+- file: phd
   title: phd
   sections:
     - file: phd/application-documents
     - file: phd/graduate-competencies
     - file: phd/reverse-engineering
 
-- file: masters/masters
+- file: masters
   title: masters
   sections:
     - file: masters/eqs
     - file: masters/intern
 
-- file: covid/covid
+- file: covid
   title: covid
 
-- file: pages/contact
+- file: contact
   title: contact
 
