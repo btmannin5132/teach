@@ -93,8 +93,8 @@ To everyone that has donated to help us be successful in this project, we cannot
 The additional rolls of filament that have not been used have gone to good use, as they will be used to educate STEAM students in Georgia.  There have also been requests from local schools for us to produce more (1500+) shields and masks for teachers, students and the countless support staff that make our schools functional.  As of Fall 2024, the final roll of fillament got used making some chassis for our combat robotics club here at Purdue!
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem;">
-  <img src="../_static/assets/images/covprint.jpg" alt="Printer setup in my garage" style="width: 300px;" />
-  <img src="../_static/assets/images/covus.jpg" alt="Amanda and I with the products" style="width: 300px;" />
+  <img src="_static/assets/images/covprint.jpg" alt="Printer setup in my garage" style="width: 300px;" />
+  <img src="_static/assets/images/covus.jpg" alt="Amanda and I with the products" style="width: 300px;" />
 </div>
 
 
