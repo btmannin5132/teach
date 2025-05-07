@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: pages/intro
+root: pages/index
 chapters:
 - url: https://btmannin5132.github.io/teach/_static/assets/documents/Manning_Benjamin_Resume_Gen.pdf
   title: "Resume"
