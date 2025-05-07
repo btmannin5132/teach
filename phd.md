@@ -1,6 +1,6 @@
 ---
 layout: page
-title: PHD in Engineering Education
+title: PhD in Engineering Education
 permalink: /phd/phd
 ---
 
