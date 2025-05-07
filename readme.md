@@ -15,9 +15,10 @@ $ `pip install ghp-import`
 Create book if needed:
 $ `jupyter-book create mybook`
 
-After site modification:
+After site modification in MAIN
 
 Build: 
+$ `jupyter-book clean .`
 $ `jupyter-book build .`
 
 Preview:
@@ -32,4 +33,4 @@ Push:
 Publish:
 $`ghp-import -n -p -f _build/html`
 
-There is also a makefile in the main directory that will complete this for you as needed.
+There is also a makefile in the main directory that will complete this as needed.

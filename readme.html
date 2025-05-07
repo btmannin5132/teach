@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'readme';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -356,9 +358,10 @@ document.write(`
 <p>$ <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ghp-import</span></code></p>
 <p>Create book if needed:
 $ <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">create</span> <span class="pre">mybook</span></code></p>
-<p>After site modification:</p>
+<p>After site modification in MAIN</p>
 <p>Build:
-$ <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">.</span></code></p>
+<span class="math notranslate nohighlight">\( `jupyter-book clean .`
+\)</span> <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">.</span></code></p>
 <p>Preview:
 $<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">http.server</span> <span class="pre">--directory</span> <span class="pre">_build/html</span></code>
 If on Codespaces, a pop up will open asking to view in another tab</p>
@@ -368,7 +371,7 @@ If on Codespaces, a pop up will open asking to view in another tab</p>
 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p>
 <p>Publish:
 $<code class="docutils literal notranslate"><span class="pre">ghp-import</span> <span class="pre">-n</span> <span class="pre">-p</span> <span class="pre">-f</span> <span class="pre">_build/html</span></code></p>
-<p>There is also a makefile in the main directory that will complete this for you as needed.</p>
+<p>There is also a makefile in the main directory that will complete this as needed.</p>
 
     <script type="text/x-thebe-config">
     {
