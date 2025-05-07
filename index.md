@@ -6,8 +6,6 @@ permalink: /index
 ---
 # Welcome
 
-This is a test to make sure the branch adjustment worked.
-
 **Throughout this document, you can find my resume, personal teaching philosophy, and my answers to essential questions that teachers should consider. Look through the sections to see different lesson plans and assessments that I have made and am very eager to implement in the near future.**
 <div style="text-align: justify;">
 <p>
