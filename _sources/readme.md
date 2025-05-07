@@ -2,6 +2,8 @@
 
 This site is made primarily in Jupyter Books, more documentation can be found here: 
 
+Site can be found here: 
+
 Steps for publishing:
 
 Install jupyter books if needed:
