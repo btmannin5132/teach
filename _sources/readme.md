@@ -1,3 +1,5 @@
+
+
 This site is made primarily in Jupyter Books, more documentation can be found here: 
 
 Steps for publishing:
@@ -28,3 +30,4 @@ Push:
 Publish:
 $`ghp-import -n -p -f _build/html`
 
+There is also a makefile in the main directory that will complete this for you as needed.
