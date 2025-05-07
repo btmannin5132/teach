@@ -1,26 +1,30 @@
 ---
 layout: home
 title: Welcome to my Teaching Portfolio
+permalink: /index
 
 ---
+# Welcome
+
+This is a test to make sure the branch adjustment worked.
+
+**Throughout this document, you can find my resume, personal teaching philosophy, and my answers to essential questions that teachers should consider. Look through the sections to see different lesson plans and assessments that I have made and am very eager to implement in the near future.**
+<div style="text-align: justify;">
 <p>
-  <img src="assets/images/me.jpg" alt="Ben Manning" style="float:right; margin-right: 15px; width:250px;">
-   <span style="color: darkblue; font-weight: bold;">
-  Throughout this document, you can find my resume, personal teaching philosophy, and my answers to essential questions that teachers should consider. Look through the sections to see different lesson plans and assessments that I have made and am very eager to implement in the near future. 
-    </span>
+  <img src="_static/assets/images/me.jpg" alt="Ben Manning" style="float:right; margin-left: 20px; width:250px;">
 </p>
 
 
 I am originally from De Pere, Wisconsin, where I graduated from De Pere High School in 2013.  During my high school career, I was heavily involved in our local robotics team, and the Boy Scouts of America.  Between these two organizations, I developed a passion for science, and nature and I wanted to find a way to share this passion with everyone I could.  I first did this by becoming a camp counselor at Bear Paw Scout Camp.  Over my two years as a counselor, and two years as the area director of Outdoor Skills, I taught over ten different merit badges to thousands of scouts and scouters.  From this experience, my passion for teaching was founded.
 
 <p>
-  <img src="assets/images/sps1.jpg" alt="Ben Manning" style="float:left; margin-right: 15px; width:200px;">
+  <img src="_static/assets/images/sps1.jpg" alt="Ben Manning" style="float:left; margin-right: 15px; width:300px;">
 
 After high School, I attended Michigan Technological University, where I majored in physics and graduated in 2017. During my time there, I was a Physics Demonstration Specialist, and the Teaching Lab Manager for the physics department.
 
 
 For these positions, I led  a  small  group of  students to  make sure that the physics teaching labs were  set up on time for students, and maintained the equipment for the labs. I also helped design and build physics demonstrations that are used during departmental  lectures.  Through the Michigan Tech chapter of The Society of Physics Students, I was involved with many student outreach programs, where we would bring physics demonstrations and help get young students and their families interested in STEM. Some demonstrations involved showing properties of friction (Top), to showing how the air around us exerts a lot of pressure (Bottom).  I was also involved with the Michigan Science Teaching and Assessment Reform (Mi-STAR) which seeks to develop a more integrated science curriculum for middle-grade students (grades 6-8).  I focused on a lesson that involved showing the change in potential and kinetic energy of a pendulum, and finding ways it would be able to be executed in low-income schools.  The content of this lesson can be found by going to the Lessons and Assessments Tab.
-<img src="assets/images/sps2.jpg" alt="Ben Manning" style="float:left; margin-right: 15px; width:200px;">
+<img src="_static/assets/images/sps2.jpg" alt="Ben Manning" style="float:left; margin-right: 15px; width:300px;">
  
 </p>
  
@@ -40,3 +44,6 @@ In 2022, I took the exciting step of pursuing a PhD in Engineering Education at 
 As of fall 2024, I am now a lecturer for the College of Engineering at Purdue University.  In this role, I have taken on teaching our First-Year-Engineering courses, primarily ENGR 133, the program associated with our EPICS teams, a project-based engineering program that empasises community involvement in the projects.  I am also mentoring two EPICS project teams focused around asistive technology for different physical and learning disabilities, and creating exibits for the Indianapolis Speedway Museum.
 
 Don't worry, I am still teaching electronics!  I am also lecturing for our ECE fundamentals courses, infact, the lecture that is associated with the labs I used to run.  I am also developing new lab courses focused on reverse engineering electronic products in conjuntion with my PhD.
+
+</div>
+
