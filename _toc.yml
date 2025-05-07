@@ -8,17 +8,20 @@ chapters:
   title: "Resume"
 
 - file: phd/phd
+  title: phd
   sections:
     - file: phd/application-documents
     - file: phd/graduate-competencies
     - file: phd/reverse-engineering
 
 - file: masters/masters
+  title: masters
   sections:
     - file: masters/eqs
     - file: masters/intern
 
 - file: covid/covid
+  title: covid
 
 - file: pages/contact
   title: contact
