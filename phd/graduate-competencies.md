@@ -8,7 +8,7 @@ permalink: /phd/graduate-competencies
 
 ## Teach Engineering
 
-:::{dropdown} Click to Expand
+:::{dropdown}
 
 As an individual that is pursuing a PhD in how we as a society can better teach and develop engineers, it makes sense that I should be a leader in this space.  While it is a solemn responsibility to help teach and train other leaders to develop new and cutting-edge curriculum that will help form our future engineers and scientists, I should also be comfortable teaching and interacting with the students directly, whether they are just learning what engineering is in elementary school, to those pursuing advanced degrees.  
 
@@ -37,7 +37,7 @@ Along with my work in ECE, I hope to contribute to research in the K-16 space, p
 
 ## Explain and Critique Education Policy
 
-:::{dropdown} Click to Expand
+:::{dropdown}
 
 As a developing scholar in Engineering Education, it is a responsibility to be able to discuss the policies that exist in the education space to whoever wants or needs to hear that information.  It is also important to be critical of these policies, and ensure that the policies in place are effective, fair, and beneficial for the students and educators that are expected to maintain and uphold these policies.  
 
@@ -75,7 +75,7 @@ As I work on research in the K-16 space, I hope that I am also able to provide a
 
 ## Demonstrate Engineering Skills 
 
-:::{dropdown} Click to Expand
+:::{dropdown}  
 
 Being a scholar in Engineering education, it only makes sense that one should be proficient, if not an expert in core engineering practices, and be able to demonstrate those proficiencies.  It could be argued that this should be the easiest competency for an engineer to demonstrate in this program, the only problem being that I am not an engineer.  
 Since I do not have a formal or professional engineering background, I hold the burden to show that I have the ability to demonstrate engineering principles, and apply these principles in a variety of formats.  The primary way that I display my abilities in engineering is in the form of teaching these principles, specifically in the engineering branches of mechatronics and electronics.  I have been developing my proficiency in engineering in non-traditional ways, primarily with personal projects in numerous fields on electronics which started as a hobby during my physics degree, and now has become a career.  Developing my proficiency in engineering concepts will be an ever-developing task for me as I continue to work on my own personal skills, and finding better ways to teach and discuss the concepts with colleagues and students.  
@@ -132,7 +132,7 @@ Using a practical engineering mindset to make different electronic projects is g
 
 ## Communicate Knowledge
 
-:::{dropdown} Click to Expand
+:::{dropdown}  
 
 It is my responsibility as a leader in Engineering Education to be able to present not only research, but also curriculum and engineering content to a variety of audiences.  Depending on the application, the content may need to be presented as a lecture, discussion, report, manual, video, or a variety of other media.  Understanding to whom the content is being delivered, and determining the best way to present that data given the audience is a continuously developing skill for everyone in the engineering education space.
 
@@ -162,7 +162,7 @@ As an educator, I hope to further research in how we better communicate educatio
 
 ## Engage in Professional Development 
 
-:::{dropdown} Click to Expand
+:::{dropdown}  
 
 It is an obligation of a scholar in any space to stay up to date with current studies and practices of the filed.  In Engineering Education and as an educator, my obligation to stay updated is even greater as I am facing students in an ever-chaining field on a daily basis.  As an educator, it is my main responsibility to be able to effectively present information to students in the classroom or lab.  As policies and practices in engineering and engineering education change, the courses and the labs that I maintain should change accordingly.  Professional development not only enriches my knowledge base but also equips me with new tools and methodologies to enhance the effectiveness of laboratory instruction. It allows me to explore emerging trends, participate in workshops, and collaborate with peers, fostering a continuous learning mindset. This commitment to lifelong learning not only benefits my own professional growth but directly contributes to the enrichment of the educational experiences I facilitate for students pursuing engineering disciplines. 
 
@@ -189,7 +189,7 @@ I am hoping to conduct research in the K16 space, primarily focusing on how our 
 
 ## Participate Actively in Professional Communities
 
-:::{dropdown} Click to Expand
+:::{dropdown}  
 
 I have an obligation to collaborate with other scholars in Engineering Education to both learn about experiences and research performed by others, and to also share my own experiences.  Being part of these communities allows me to contribute to ongoing conversations, share my experiences, and foster connections that can prove invaluable in both my academic journey and future career.  By interacting with fellow educators, industry professionals, and researchers, I gain invaluable insights into innovative teaching methodologies, emerging trends, and real-world applications of engineering principles.  I have been fortunate to have a strong professional community around me in Purdue ECE where I have already learned and collaborated in a variety of ways, and look forward to expanding my professional network around the university, and the world. 
 
@@ -215,7 +215,7 @@ I hope to continue my work in developing connections with more industries to hel
 
 ## Create Knowledge  
 
-:::{dropdown} Click to Expand
+:::{dropdown}  
 
 Actively contributing to the creation of knowledge in Engineering Education is a compelling obligation. By engaging in research and scholarly activities, I not only deepen my own understanding of effective teaching practices but also contribute to the collective wisdom of the educational community. Creating knowledge and promoting this discourse allows me to address gaps in existing pedagogical approaches, explore innovative methodologies, and generate evidence-based insights that can inform both my own teaching practices and those of my colleagues.  
 
@@ -247,7 +247,7 @@ With most of my professional experience having revolved around curriculum develo
 ## Apply Engineering Education Principles
 
 
-:::{dropdown} Click to Expand
+:::{dropdown}  
 
 Applying engineering education principles is foundational to my role and mission as a lab coordinator and educator. This involves not only providing hands-on experiences but also emphasizing critical thinking and problem-solving. Incorporating active learning strategies and real-world applications in the lab setting ensures that students not only grasp theoretical concepts but also develop the practical skills essential for success in the field. Embracing engineering education principles in my work allows for continuous improvement, as I can assess the effectiveness of different instructional approaches, refine methodologies, and contribute to the scholarship of teaching and learning within the engineering education community. In doing so, I am not just facilitating lab sessions but actively contributing to the broader mission of preparing students to thrive in the dynamic field of engineering. 
 
@@ -269,7 +269,7 @@ As I continue to develop curriculum and perform research in engineering educatio
 
 ## Synthesize Knowledge 
 
-:::{dropdown} Click to Expand
+:::{dropdown}  
 
 With the ever-evolving field of engineering as a whole, it is critical that scholars in engineering education compile extrapolate on the diverse concepts and methodologies throughout the entire field . Synthesizing knowledge allows me to integrate insights from various sources, including educational research, industry trends, and pedagogical advancements. I can then create a holistic understanding of effective instructional approaches within the context of laboratory settings. This synthesis not only aids in the development of comprehensive and well-rounded instructional strategies but also facilitates the seamless integration of theoretical concepts with practical applications. 
 
@@ -293,7 +293,7 @@ In order for me to be able to do my job as a lab coordinator effectively, along 
 
 ## Think Critically and Reflectively  
 
-:::{dropdown} Click to Expand
+:::{dropdown}  
 
 As an educator studying Engineering Education, cultivating critical thinking and reflective practices is paramount to my professional journey. By questioning assumptions, analyzing pedagogical approaches, and scrutinizing the effectiveness of instructional methods, I am better positioned to refine my teaching practices and promote a deeper understanding of engineering concepts. Embracing critical thinking and reflective practices not only enhances the quality of my teaching but also fosters a culture of continuous improvement that will hopefully spread to my students, teaching assistants, and fellow instructional staff. 
 
