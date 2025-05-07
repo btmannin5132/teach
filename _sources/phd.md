@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PhD in Engineering Education
-permalink: /phd/phd
+permalink: /phd
 ---
 
 # PHD in Engineering Education

@@ -19,6 +19,13 @@ chapters:
     - file: masters/eqs
     - file: masters/intern
 
+- file: courses
+  title: "Course Development"
+  sections:
+    - file: courses/ece20007
+      title: "ECE20007- Electronics Fundamentals"
+    - file: courses/reverse-engineering
+      title: "Reverse Engineering"
 - file: covid
 
 - file: contact
