@@ -12,7 +12,6 @@ chapters:
   sections:
     - file: phd/application-documents
     - file: phd/graduate-competencies
-    - file: phd/reverse-engineering
 
 - file: masters
   sections:
