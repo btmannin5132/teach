@@ -14,8 +14,8 @@ push:
 	git push
 
 publish:
-	cp readme.md _build/html/
-	cp _toc.yml _build/html/
+	# cp readme.md _build/html/
+	# cp _toc.yml _build/html/
 	ghp-import -n -p -f _build/html
 
 push-readme:
