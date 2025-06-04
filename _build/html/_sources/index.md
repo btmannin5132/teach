@@ -2,7 +2,7 @@
 layout: home
 title: Welcome
 ---
-# Welcome to my Teaching Portfolio
+# My Homepage
 
 **Throughout this document, you can find my resume, personal teaching philosophy, and my answers to essential questions that teachers should consider. Look through the sections to see different lesson plans and assessments that I have made and am very eager to implement in the near future.**
 <div style="text-align: justify;">
