@@ -3,6 +3,7 @@
 
 title: Ben Manning's Teaching Portfolio
 author: Ben Manning
+logo : "_static/assets/images/logo.png"
 
 
 # Force re-execution of notebooks on each build.
@@ -36,4 +37,4 @@ html:
   use_repository_button: false
   use_folder_names: false
   favicon : "_static/assets/images/favicon.ico"
-  logo : "_static/assets/images/logo.png"
+  
