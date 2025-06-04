@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Ben Manning's Teaching Portfolio
+#title: Ben Manning's Teaching Portfolio
 author: Ben Manning
 logo : "_static/assets/images/logo.png"
 
