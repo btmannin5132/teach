@@ -24,15 +24,21 @@ $ `jupyter-book clean .`
 $ `jupyter-book build .`
 
 Preview:
+
 $`python3 -m http.server --directory _build/html`
+
 If on Codespaces, a pop up will open asking to view in another tab
 
 Push:
+
 `git add .`
+
 `git commit -m` assuming you are in the root foler
+
 `git push`
 
 Publish:
+
 $`ghp-import -n -p -f _build/html`
 
 There is also a makefile in the main directory that will complete this as needed.
