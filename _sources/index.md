@@ -1,8 +1,6 @@
 ---
 layout: home
 title: Welcome
-permalink: /index
-
 ---
 # Welcome to my Teaching Portfolio
 
