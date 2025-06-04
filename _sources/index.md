@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome to my Teaching Portfolio
+title: Welcome
 permalink: /index
 
 ---
