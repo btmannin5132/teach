@@ -35,3 +35,4 @@ html:
   use_issues_button: false
   use_repository_button: false
   use_folder_names: false
+  favicon : "_static/assets/images/favicon.ico"
