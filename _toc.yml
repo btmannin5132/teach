@@ -3,6 +3,7 @@
 
 format: jb-book
 root: index
+title: Welcome
 
 chapters:
 - url: https://btmannin5132.github.io/teach/_static/assets/documents/Manning_Benjamin_Resume_Gen.pdf
