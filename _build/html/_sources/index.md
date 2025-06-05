@@ -3,7 +3,7 @@ layout: home
 title: Welcome
 ---
 
-![Main Logo](_static/assets/images/logo1.png "Ben Manning's Teaching Portfolio")
+![Main Logo](_static/assets/images/logo.png "Ben Manning's Teaching Portfolio")
 # Welcome
 
 **Throughout this document, you can find my resume, personal teaching philosophy, and my answers to essential questions that teachers should consider. Look through the sections to see different lesson plans and assessments that I have made and am very eager to implement in the near future.**
