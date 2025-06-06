@@ -60,6 +60,8 @@ Newer versions of Chompy now glow in the dark, and has a better "hand to hold." 
 
 <img src="_static/assets/images/chompCorn1.jpeg" height="240" >
 
+I am currently working on a barbershop trio/quartet of Chomppy's that will take in an audio file, and distribute the sounds based on frequencies.  This had limited success last Halloween, and will keep going again once the season rolls back around.
+
 ## Battle Bots!
 
 As the founding mentor of our university's battle bots team, I've guided the creation of dozens of robots and even organized public ant and beetleweight competitions. I'm also hands-on, though I lean towards control bots over offensive designs – it wouldn't be a good look for the mentor to dismantle student projects!
