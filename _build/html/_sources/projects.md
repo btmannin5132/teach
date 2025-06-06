@@ -4,7 +4,7 @@ title: Personal Projects
 permalink: /projects
 ---
 
-# Projects
+# Personal Projects
 
 My journey in electronics has been largely shaped by personal projects, a passion that ignited during my time as a student at Michigan Tech and has continued throughout my professional and academic careers. Through the courses I develop, I aim to inspire others to embark on their own project-based learning, driven by the same curiosity and passion that fuels my own exploration. Here are some of my favorite projects from over the years. Enjoy!
 
