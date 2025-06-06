@@ -56,9 +56,10 @@ Chompy the skull was one of my first ventures into animatronics, and has stuck a
 
 Newer versions of Chompy now glow in the dark, and has a better "hand to hold."  Along with that version, I have also made one that sits on my shoulder and "talks" based on control from a remote.  It also likes cornbread!
 
-<img src="_static/assets/images/chompy.jpg" width="320" >
+<img src="_static/assets/images/chompy.jpg" height="240" >
 
-<img src="_static/assets/images/chompCorn1.jpeg" width="320" >
+<img src="_static/assets/images/chompCorn1.jpeg" height="240" >
+
 ## Battle Bots!
 
 As the founding mentor of our university's battle bots team, I've guided the creation of dozens of robots and even organized public ant and beetleweight competitions. I'm also hands-on, though I lean towards control bots over offensive designs – it wouldn't be a good look for the mentor to dismantle student projects!
