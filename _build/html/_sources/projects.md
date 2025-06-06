@@ -42,9 +42,9 @@ Future plans involve adding motion tracking and facial recognition so Pete can o
 
 Another addition to this series of projects is "Pete the Dank Engine." I designed a frightening version of our beloved childhood train characters, equipping it with motors so it could move via a standard RC radio. This creation even served as our Battle Bots team's first house bot!
 
-<img src="_static/assets/images/PeteDankCAD.jpeg" width="320" >
+<img src="_static/assets/images/PeteDankCAD.jpeg" width="320" height="240">
 
-<img src="_static/assets/images/PeteDank.png" width="320" >
+<img src="_static/assets/images/PeteDank.png"  height="240">
 
 My current expedition in this lineage of projects is "Spider Pete." Think of the baby on the spider chassis from Toy Story 2. Got it? Good.
 
@@ -58,7 +58,7 @@ Newer versions of Chompy now glow in the dark, and has a better "hand to hold." 
 
 <img src="_static/assets/images/chompy.jpg" width="320" >
 
-
+<img src="_static/assets/images/chompCorn1.jpeg" width="320" >
 ## Battle Bots!
 
 As the founding mentor of our university's battle bots team, I've guided the creation of dozens of robots and even organized public ant and beetleweight competitions. I'm also hands-on, though I lean towards control bots over offensive designs – it wouldn't be a good look for the mentor to dismantle student projects!
