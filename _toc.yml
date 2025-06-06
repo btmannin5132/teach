@@ -26,6 +26,9 @@ chapters:
       title: "ECE20007- Electronics Fundamentals"
     - file: courses/reverse-engineering
       title: "Reverse Engineering"
+
+- file: projects
+
 - file: covid
 
 - file: contact
