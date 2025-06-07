@@ -101,5 +101,3 @@ After sneeking some peeks at the wands in the park, I learned the park's wands w
 A few years later, a friend asked me to make wands for their 'Scary Plotter'-obsessed daughter's park trip. This was my chance for more elegant designs, and a reason to dabble with som AI-generated imaging for logos. I used reflective dots and custom-made wands for the whole family. I even wrote an OpenMV program to track wand movements, confirming they worked properly at home! The wands were a smashing success at the park; some attendees even asked if they were for sale.  I suppose the good news is if this teaching thing doesn't work out, I can just go into wand-making...
 
 <img src="_static/assets/images/wand2.jpg" width="320" >
-
-<img src="_static/assets/images/wand3.jpg" width="320" >
