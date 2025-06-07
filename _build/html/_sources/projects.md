@@ -76,16 +76,6 @@ My efforts on the Melty-Brain bot have, so far, yielded more lessons than victor
 
 <img src="_static/assets/images/SpinnerDead.png" width="320" >
 
-## Oscilloscope Schenaigans
-
-Oscilloscopes have a lot of great uses in electronics, but I like to find other fun ways to use them too!  One way is making a program that scans an image and outputs a color as an arbritrary waveform that can then be displayed on the scope in XY mode.  This allows us to make some great images, and students enjoy the results too!
-
-<img src="_static/assets/images/KeysightPurdue.png" width="320" >
-
-Of course, when a student shows me their surpluss scope from the 1980's I have to have some fun with it too.  "Why so Serious?"
-
-<img src="_static/assets/images/OldScopeJoke.png" width="320" >
-
 ## "Magic" Wands
 
 <img src="_static/assets/images/WandLogo.png" width="320" >
@@ -103,3 +93,14 @@ A few years later, a friend asked me to make wands for their 'Scary Plotter'-obs
 <img src="_static/assets/images/wand2.jpg" width="320" >
 
 Next stepts for this project include making the wands work with our television!
+
+## Oscilloscope Schenaigans
+
+Oscilloscopes have a lot of great uses in electronics, but I like to find other fun ways to use them too!  One way is making a program that scans an image and outputs a color as an arbritrary waveform that can then be displayed on the scope in XY mode.  This allows us to make some great images, and students enjoy the results too!
+
+<img src="_static/assets/images/KeysightPurdue.png" width="320" >
+
+Of course, when a student shows me their surpluss scope from the 1980's I have to have some fun with it too.  "Why so Serious?"
+
+<img src="_static/assets/images/OldScopeJoke.png" width="320" >
+
