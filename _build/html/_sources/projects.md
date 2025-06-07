@@ -85,3 +85,21 @@ Oscilloscopes have a lot of great uses in electronics, but I like to find other 
 Of course, when a student shows me their surpluss scope from the 1980's I have to have some fun with it too.  "Why so Serious?"
 
 <img src="_static/assets/images/OldScopeJoke.png" width="320" >
+
+## "Magic" Wands
+
+<img src="_static/assets/images/WandLogo.png" width="320" >
+
+That famous book and movie series, rhyming with 'Scary Plotter,' has some iconic wand magic that I've always dreamed of recreating. Luckily, a certain amusement park offers interactive "magic" exhibits, but only if you fork over cash for their pricey wands. My philosophy? I'd happily spend far more time and money building my own to replicate the magic than buying theirs!
+
+So, when Amanda and I decided to visit this enchanting place, I opted to craft my own wands, hoping they'd fool the exhibits. A bit of research (spoiler!) revealed the exhibits relied on an IR camera picking up specific wand movements. I figured I could fake that feedback. I 3D printed wands with an internal, button-activated IR LED. They weren't pretty, but they got the job done. I even used different IR wavelengths for good measure.
+
+After sneeking some peeks at the wands in the park, I learned the park's wands were actually passive, just tiny IR reflectors on the tip. Naturally, I needed an excuse to build new ones.
+
+<img src="_static/assets/images/wand1.jpg" width="320" >
+
+A few years later, a friend asked me to make wands for their 'Scary Plotter'-obsessed daughter's park trip. This was my chance for more elegant designs, and a reason to dabble with som AI-generated imaging for logos. I used reflective dots and custom-made wands for the whole family. I even wrote an OpenMV program to track wand movements, confirming they worked perfectly at home! The wands were a smashing success at the park; some attendees even asked if they were for sale.  I suppose the good news is if this teaching thing doesn't work out, I can just go into wand-making...
+
+<img src="_static/assets/images/wand2.jpg" width="320" >
+
+<img src="_static/assets/images/wand3.jpg" width="320" >
