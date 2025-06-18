@@ -1,10 +1,9 @@
 
 # Resume
 
-# Benjamin Manning
+## Benjamin Manning
 
-btmannin@purdue.edu
-
+btmannin@purdue.edu\
 *If one seeks to listen, one will learn to lead. If one seeks to lead, one will become a leader.*
 
 -----
@@ -17,23 +16,23 @@ Current research focused on self-motivated learning and developing a tinkering m
 
 **Master of Arts in Teaching: Broad-field Science** | 2017-2018\
 Piedmont College: Demorest, GA, piedmont.edu\
-  * Funded through the National Woodrow Wilson Teaching Fellowship
-  * Certified in Broadfield Science, Engineering/Technology Education
+Funded through the National Woodrow Wilson Teaching Fellowship\
+Certified in Broadfield Science, Engineering/Technology Education
 
 **Bachelor of Arts: Physics** | 2013-2017\
 Michigan Technological University: Houghton, MI, mtu.edu/physics\
-  * Minor in Computer Science
+Minor in Computer Science
 
 **Google IT Automation with Python** | April 2021\
 by Google on Coursera\
-  * Certificate Credential ID: VE8FAX5RFCQ2
+Certificate Credential ID: VE8FAX5RFCQ2
 
 -----
 
 ## Work Experience
 
 **Continuing Lecturer- EPICS** | 2024-Present\
-Purdue University COE: West Lafayette, IN\
+Purdue University COE: West Lafayette, IN
   * Instruct students in Engineering fundamentals as part of a team.
   * Mentor Purdue student EPICS teams on various community-centered projects.
 
@@ -43,18 +42,18 @@ Purdue University ECE: West Lafayette, IN\
   * Supervised and trained other lab coordinators and students to lead instructional labs.
 
 **STEM Teacher** | 2018-2021\
-Barrow Arts and Sciences Academy (BASA)/ Sims Academy: Winder, GA\
+Barrow Arts and Sciences Academy (BASA)/ Sims Academy: Winder, GA
   * Taught fundamentals of electronics, computer science, and engineering in an applied classroom setting.
   * Led the development and piloting of the new STEM magnet program at BASA.
   * Taught the entire Mechatronics pathway, including developing a dual enrollment course for the third-level.
 
 **Adjunct Mechatronics Instructor** | 2019-2021\
-Lanier Technical College: Winder, GA\
+Lanier Technical College: Winder, GA
   * Taught Mechatronics Courses to a wide range of students and abilities.
   * Developed a dual enrollment course for high school students in partnership with Lanier Tech and Sims Academy.
   * Courses taught: Industrial Instrumentation, Industrial Motor Controls, AC Theory I, Fundamental Power: AC.
 
-**Teaching Lab Manager** | 2015-2017\
+**Teaching Lab Manager** | 2015-2017
 Michigan Technological University: Physics Department: Houghton, MI\
   * Led a group of students in setting up and maintaining the physics teaching labs.
   * Repaired lab equipment used in the physics teaching labs.
