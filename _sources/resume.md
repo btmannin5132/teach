@@ -11,69 +11,51 @@ btmannin@purdue.edu
 
 ## Education
 
-**Doctor of Philosophy: Engineering Education** | 2023-Present
-
-Purdue University: West Lafayette, IN, purdue.edu
-
+**Doctor of Philosophy: Engineering Education** | 2023-Present\
+Purdue University: West Lafayette, IN, purdue.edu\
 Current research focused on self-motivated learning and developing a tinkering mindset.
 
-**Master of Arts in Teaching: Broad-field Science** | 2017-2018
-
-Piedmont College: Demorest, GA, piedmont.edu
-
+**Master of Arts in Teaching: Broad-field Science** | 2017-2018\
+Piedmont College: Demorest, GA, piedmont.edu\
   * Funded through the National Woodrow Wilson Teaching Fellowship
   * Certified in Broadfield Science, Engineering/Technology Education
 
-**Bachelor of Arts: Physics** | 2013-2017
-
-Michigan Technological University: Houghton, MI, mtu.edu/physics
-
+**Bachelor of Arts: Physics** | 2013-2017\
+Michigan Technological University: Houghton, MI, mtu.edu/physics\
   * Minor in Computer Science
 
-**Google IT Automation with Python** | April 2021
-
-by Google on Coursera
-
+**Google IT Automation with Python** | April 2021\
+by Google on Coursera\
   * Certificate Credential ID: VE8FAX5RFCQ2
 
 -----
 
 ## Work Experience
 
-**Continuing Lecturer- EPICS** | 2024-Present
-
-Purdue University COE: West Lafayette, IN
-
+**Continuing Lecturer- EPICS** | 2024-Present\
+Purdue University COE: West Lafayette, IN\
   * Instruct students in Engineering fundamentals as part of a team.
   * Mentor Purdue student EPICS teams on various community-centered projects.
 
-**Senior Instructional Lab Coordinator, Associate Director of Undergraduate Labs- Curriculum** | 2021-2024
-
-Purdue University ECE: West Lafayette, IN
-
+**Senior Instructional Lab Coordinator, Associate Director of Undergraduate Labs- Curriculum** | 2021-2024\
+Purdue University ECE: West Lafayette, IN\
   * Collaborated with faculty and staff to develop, refine, and support innovative instructional methods in labs.
   * Supervised and trained other lab coordinators and students to lead instructional labs.
 
-**STEM Teacher** | 2018-2021
-
-Barrow Arts and Sciences Academy (BASA)/ Sims Academy: Winder, GA
-
+**STEM Teacher** | 2018-2021\
+Barrow Arts and Sciences Academy (BASA)/ Sims Academy: Winder, GA\
   * Taught fundamentals of electronics, computer science, and engineering in an applied classroom setting.
   * Led the development and piloting of the new STEM magnet program at BASA.
   * Taught the entire Mechatronics pathway, including developing a dual enrollment course for the third-level.
 
-**Adjunct Mechatronics Instructor** | 2019-2021
-
-Lanier Technical College: Winder, GA
-
+**Adjunct Mechatronics Instructor** | 2019-2021\
+Lanier Technical College: Winder, GA\
   * Taught Mechatronics Courses to a wide range of students and abilities.
   * Developed a dual enrollment course for high school students in partnership with Lanier Tech and Sims Academy.
   * Courses taught: Industrial Instrumentation, Industrial Motor Controls, AC Theory I, Fundamental Power: AC.
 
-**Teaching Lab Manager** | 2015-2017
-
-Michigan Technological University: Physics Department: Houghton, MI
-
+**Teaching Lab Manager** | 2015-2017\
+Michigan Technological University: Physics Department: Houghton, MI\
   * Led a group of students in setting up and maintaining the physics teaching labs.
   * Repaired lab equipment used in the physics teaching labs.
 
@@ -81,14 +63,12 @@ Michigan Technological University: Physics Department: Houghton, MI
 
 ## Achievements
 
-**Outstanding Instructor Recognition** | January 2025
-
+**Outstanding Instructor Recognition** | January 2025\
 Purdue COE
 
   * Recognized by the college for outstanding instructor reviews from students for the previous semester.
 
-**Bravo Award** | March 2022, February 2023
-
+**Bravo Award** | March 2022, February 2023\
 Purdue ECE
 
   * Awarded for extraordinary work in innovation, creativity, and operational excellence.
