@@ -54,7 +54,7 @@ Lanier Technical College: Winder, GA
   * Courses taught: Industrial Instrumentation, Industrial Motor Controls, AC Theory I, Fundamental Power: AC.
 
 **Teaching Lab Manager** | 2015-2017
-Michigan Technological University: Physics Department: Houghton, MI\
+Michigan Technological University: Physics Department: Houghton, MI
   * Led a group of students in setting up and maintaining the physics teaching labs.
   * Repaired lab equipment used in the physics teaching labs.
 
