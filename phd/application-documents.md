@@ -28,6 +28,7 @@ Below are the essays that I used to apply for my PhD in Engineering Education.
 </iframe>
 
 Diversity fuels innovation, expands understanding, and enriches every facet of society, especially education. My portfolio reflects this unwavering conviction, and it's essential for anyone viewing it to share this foundational value. If this principle challenges you, perhaps this isn't the portfolio for you.
+
 ```
 
 ```{tab-item} Research Statement

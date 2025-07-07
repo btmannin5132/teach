@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Reverse Engineering Currciculum
+title: Reverse Engineering Curriculum
 permalink: /courses/reverse-engineering
 ---
 
-# Reverse Engineering Currciculum
+# Reverse Engineering Curriculum
 
 One of my main works at the beginning of my PhD is developing a course that will proivde students a space to explore electronics more freely, while promoting techincal communicaton and life-long learning.  To complete all of these tasks, a reverse engineering course has been developed.  Below are the different resources for this course:
 
