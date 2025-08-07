@@ -111,7 +111,7 @@ The new Arduino R4 WiFi is pretty cool, and it's got some great features. There'
 
 Below is a web app you can play with if you have an Arduino R4 WiFi handy. The app will still light up and do its thing without the board, but it won't actually do a whole lot. It will also yell at you with an error message every time you click a button because it's trying to connect to an Arduino that isn't there.
 
-<iframe src="_static/assets/code/Arduino/bt/index.html" width="100%" height="700" title="Arduino BLE Web App"></iframe>
+<iframe src="_static/assets/code/Arduino/bt/bt-app.html" width="100%" height="700" title="Arduino BLE Web App"></iframe>
 
 The code for the arduino (and the html for the site) can be found [here:](https://github.com/btmannin5132/teach/tree/main/_static/assets/code/Arduino/bt) 
 
