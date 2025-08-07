@@ -111,7 +111,8 @@ The new Arduino R4 Wifi has some pretty cool features, including Wifi, bluetooth
 
 <iframe src="https://btmannin5132.github.io/personal/" width="100%" height="700" title="Arduino BLE Web App"></iframe>
 
-The code for the arduino can be found here: 
+The code for the arduino (and the html for the site) can be found [here:](https://github.com/btmannin5132/teach/tree/main/_static/assets/code/Arduino/bt) 
 
-Updating the code to both the html page, and the arduino code is a little annoying for further presets.  If you would like to add your own presets, feel free to tinker first with the wifi server version found here: 
+Updating the code to both the html page, and the arduino code is a little annoying for further presets.  If you would like to add your own presets, feel free to tinker first with the wifi server version found [here](https://github.com/btmannin5132/teach/tree/main/_static/assets/code/Arduino) 
+
 In this one, you will just connect to the Arduino using your Wi-Fi connections on your device, and then go to the address [198.162.4.1](http://192.168.4.1/) to access the webapp.  Instructions for adding your own presets are in the code comments.
