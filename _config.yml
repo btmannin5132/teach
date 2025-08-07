@@ -40,5 +40,5 @@ html:
 
 sphinx:
   config:
-    html_extra_path: ["_static/assets/code/Arduino/bt/index.html"]
+    html_extra_path: ["_static/assets/code/Arduino/bt/web"]
   
