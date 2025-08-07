@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino LED Matrix Control (BLE)</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #c7a456;
+  text-align: center;
+}
+h1 {
+  color: #c7a456;
+}
+#matrix {
+  display: grid;
+  grid-template-columns: repeat(12, 40px);
+  grid-template-rows: repeat(8, 40px);
+  gap: 5px;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.led {
+  width: 40px;
+  height: 40px;
+  background-color: #444444;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 2px solid #333333;
+}
+.led.on {
+  background-color: #c7a456;
+  border: 2px solid #c7a456;
+  box-shadow: 0 0 10px #c7a456;
+}
+.controls {
+  margin-top: 20px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #c7a456;
+  color: black;
+  margin: 5px;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: #b3934f;
+}
+#connectionStatus {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.footer-content {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #c7a456;
+  text-align: left;
+  font-size: 14px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-content h2 {
+  color: #c7a456;
+  margin-top: 0;
+}
+.footer-content p {
+  color: #ecf0f1;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+
+<h1>Arduino LED Matrix Control (BLE)</h1>
+<div class="controls">
+  <button id="connectButton" onclick="connect()">Connect to Arduino</button>
+  <span id="connectionStatus">Disconnected</span>
+</div>
+<div class="controls">
+  <button onclick="clearMatrix()">Clear</button>
+  <button onclick="loadPreset('S')">Smile</button>
+  <button onclick="loadPreset('H')">Heart</button>
+  <button onclick="loadPreset('PurdueP')">Purdue P</button>
+</div>
+<div id="matrix"></div>
+
+<div class="footer-content">
+
+  <p>&copy; 2025 Ben Manning</p>
+</div>
+
+<script>
+const SERVICE_UUID = "19b10000-e8f2-537e-4f6c-d104768a1214";
+const CHARACTERISTIC_UUID = "19b10001-e8f2-537e-4f6c-d104768a1214";
+
+let device, characteristic;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const matrix = document.getElementById('matrix');
+
+  for (let y = 0; y < 8; y++) {
+    for (let x = 0; x < 12; x++) {
+      const led = document.createElement('div');
+      led.className = 'led';
+      led.dataset.x = x;
+      led.dataset.y = y;
+      led.addEventListener('click', () => toggleLed(x, y, led));
+      matrix.appendChild(led);
+    }
+  }
+});
+
+async function connect() {
+  try {
+    document.getElementById('connectionStatus').textContent = "Connecting...";
+    device = await navigator.bluetooth.requestDevice({
+      filters: [{ name: 'UNO R4 LED Matrix' }],
+      optionalServices: [SERVICE_UUID]
+    });
+
+    const server = await device.gatt.connect();
+    const service = await server.getPrimaryService(SERVICE_UUID);
+    characteristic = await service.getCharacteristic(CHARACTERISTIC_UUID);
+
+    document.getElementById('connectionStatus').textContent = "Connected!";
+    console.log("Connected to device:", device.name);
+
+  } catch (error) {
+    document.getElementById('connectionStatus').textContent = "Connection Failed";
+    console.error('Connection error:', error);
+  }
+}
+
+function writeValue(value) {
+  if (!characteristic) {
+    alert("Not connected to Arduino! Please click the 'Connect' button.");
+    return;
+  }
+  const encoder = new TextEncoder();
+  characteristic.writeValue(encoder.encode(value))
+    .catch(error => console.error('Write error:', error));
+}
+
+function toggleLed(x, y, ledElement) {
+  ledElement.classList.toggle('on');
+  writeValue(`P${x},${y}`);
+}
+
+function clearMatrix() {
+  document.querySelectorAll('.led').forEach(led => led.classList.remove('on'));
+  writeValue("C");
+}
+
+function loadPreset(presetCode) {
+  // First, send the command to the Arduino
+  writeValue(presetCode);
+  
+  // Then, update the visual grid on the webpage
+  const presetFrames = {
+    'S': [
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+      [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0],
+      [0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ],
+    'H': [
+      [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0],
+      [0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0],
+      [0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0],
+      [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0],
+      [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ],
+    'PurdueP': [
+   [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+    [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    [0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0],
+    [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    [0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0],
+    [1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+    ]
+  };
+  const selectedFrame = presetFrames[presetCode];
+  if (selectedFrame) {
+    document.querySelectorAll('.led').forEach(led => {
+      const x = parseInt(led.dataset.x);
+      const y = parseInt(led.dataset.y);
+      if (selectedFrame[y][x] === 1) {
+        led.classList.add('on');
+      } else {
+        led.classList.remove('on');
+      }
+    });
+  }
+}
+</script>
+</body>
+</html>
+
+
