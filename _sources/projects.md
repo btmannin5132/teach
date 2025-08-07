@@ -104,3 +104,14 @@ Of course, when a student shows me their surpluss scope from the 1980's I have t
 
 <img src="_static/assets/images/OldScopeJoke.png" width="320" >
 
+
+## Arduino R4 Visuals
+
+The new Arduino R4 Wifi has some pretty cool features, including Wifi, bluetooth (thanks to an ESP32 which is already a powerful microcontroller by itself, and doesn't need the board, but anyways...) and an LED matrix that users can use to display all sorts of fun stuff.  Below is a webapp that you can interact with if you happen to have an Arduino R4 Wifi handy.  The app will still light up and whatnot without it, but it won't do a whole lot.  It will also yell at you after every button click because it is trying to connect to an Arduino.
+
+<iframe src="https://btmannin5132.github.io/personal/" width="100%" height="700" title="Arduino BLE Web App"></iframe>
+
+The code for the arduino can be found here: 
+
+Updating the code to both the html page, and the arduino code is a little annoying for further presets.  If you would like to add your own presets, feel free to tinker first with the wifi server version found here: 
+In this one, you will just connect to the Arduino using your Wi-Fi connections on your device, and then go to the address [198.162.4.1](http://192.168.4.1/) to access the webapp.  Instructions for adding your own presets are in the code comments.
