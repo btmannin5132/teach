@@ -116,7 +116,7 @@ Below is a web app you can play with if you have an Arduino R4 WiFi handy. The a
 The code for the arduino (and the html for the site) can be found [here:](https://github.com/btmannin5132/teach/tree/main/_static/assets/code/arduino/bt) 
 
 If you are connected to the Arduino via WiFi, the app will show up here:
-<iframe src="_static/assets/code/arduino/bt/bt-app.html" width="100%" height="500" title="Arduino Web App"></iframe>
+<iframe src="192.168.4.1" width="100%" height="500" title="Arduino Web App"></iframe>
 
 Updating the code to both the html page, and the arduino code is a little annoying for further presets.  If you would like to add your own presets, feel free to tinker first with the wifi server version found [here](https://github.com/btmannin5132/teach/tree/main/_static/assets/code/arduino) 
 
