@@ -95,18 +95,19 @@ button:hover {
 <div id="matrix"></div>
 
 <div class="footer-content">
+
   <p>&copy; 2025 Ben Manning</p>
 </div>
 
 <script>
-const SERVICE_UUID = "19B10000-E8F2-537E-4F6C-D104768A1214";
-const CHARACTERISTIC_UUID = "19B10001-E8F2-537E-4F6C-D104768A1214";
+const SERVICE_UUID = "19b10000-e8f2-537e-4f6c-d104768a1214";
+const CHARACTERISTIC_UUID = "19b10001-e8f2-537e-4f6c-d104768a1214";
 
 let device, characteristic;
 
 document.addEventListener('DOMContentLoaded', () => {
   const matrix = document.getElementById('matrix');
-  
+
   for (let y = 0; y < 8; y++) {
     for (let x = 0; x < 12; x++) {
       const led = document.createElement('div');
@@ -126,7 +127,7 @@ async function connect() {
       filters: [{ name: 'UNO R4 LED Matrix' }],
       optionalServices: [SERVICE_UUID]
     });
-    
+
     const server = await device.gatt.connect();
     const service = await server.getPrimaryService(SERVICE_UUID);
     characteristic = await service.getCharacteristic(CHARACTERISTIC_UUID);
@@ -161,16 +162,15 @@ function clearMatrix() {
 }
 
 function loadPreset(presetCode) {
+  // First, send the command to the Arduino
   writeValue(presetCode);
-
-  // We can't read the matrix state back over BLE easily,
-  // so we'll have to manually update the UI based on the preset.
-  // This is a limitation of this simplified BLE approach.
+  
+  // Then, update the visual grid on the webpage
   const presetFrames = {
     'S': [
       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       [0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0],
       [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0],
@@ -198,7 +198,6 @@ function loadPreset(presetCode) {
     [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
     ]
   };
-
   const selectedFrame = presetFrames[presetCode];
   if (selectedFrame) {
     document.querySelectorAll('.led').forEach(led => {
@@ -213,6 +212,7 @@ function loadPreset(presetCode) {
   }
 }
 </script>
-
 </body>
 </html>
+
+
