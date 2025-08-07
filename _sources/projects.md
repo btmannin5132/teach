@@ -107,7 +107,9 @@ Of course, when a student shows me their surpluss scope from the 1980's I have t
 
 ## Arduino R4 Visuals
 
-The new Arduino R4 Wifi has some pretty cool features, including Wifi, bluetooth (thanks to an ESP32 which is already a powerful microcontroller by itself, and doesn't need the board, but anyways...) and an LED matrix that users can use to display all sorts of fun stuff.  Below is a webapp that you can interact with if you happen to have an Arduino R4 Wifi handy.  The app will still light up and whatnot without it, but it won't do a whole lot.  It will also yell at you after every button click because it is trying to connect to an Arduino.
+The new Arduino R4 WiFi is pretty cool, and it's got some great features. There's Wi-Fi, Bluetooth (thanks to the ESP32), and a built-in LED matrix that you can use to display all sorts of fun stuff.
+
+Below is a web app you can play with if you have an Arduino R4 WiFi handy. The app will still light up and do its thing without the board, but it won't actually do a whole lot. It will also yell at you with an error message every time you click a button because it's trying to connect to an Arduino that isn't there.
 
 <iframe src="https://btmannin5132.github.io/personal/" width="100%" height="700" title="Arduino BLE Web App"></iframe>
 
