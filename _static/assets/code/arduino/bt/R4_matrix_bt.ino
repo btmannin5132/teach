@@ -6,7 +6,7 @@
  * I don't reccomend making a bunch of modifications to this, 
  * as you will also likely have to update the webpage that you are connecting to.
  *
- * Once the code is on the Arduino, go to the link: https://btmannin5132.github.io/teach/arduino/bt/bt-app.html or https://btmannin5132.github.io/teach/projects.html
+ * Once the code is on the Arduino, go to the link: https://btmannin5132.github.io/teach/arduino/bt/bt-app.html or https://btmannin5132.github.io/teach/projects.html#arduino-r4-visuals
  * DO NOT connect to the Arduino using your BT settings on your device.  The app will handle all of it.
 
  * Make sure BT is enabled on your device, but DO NOT connect to the arduino outside of the app.
@@ -40,6 +40,8 @@ byte currentFrame[8][12] = {
 };
 
 // Preset for a smiley face
+// These can be compressed into a hex string, 
+// but figured this would work better visually for instruction
 byte smileyFrame[8][12] = {
     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
