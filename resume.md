@@ -25,7 +25,7 @@ Minor in Computer Science
 
 **Google IT Automation with Python** | April 2021\
 by Google on Coursera\
-Certificate Credential ID: VE8FAX5RFCQ2
+Certificate Credential ID: [VE8FAX5RFCQ2](https://www.coursera.org/account/accomplishments/specialization/certificate/VE8FAX5RFCQ2)
 
 -----
 
