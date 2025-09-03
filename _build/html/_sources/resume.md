@@ -9,6 +9,7 @@ btmannin@purdue.edu\
 -----
 
 ## Education
+:::{dropdown}
 
 **Doctor of Philosophy: Engineering Education** | 2023-Present\
 Purdue University: West Lafayette, IN, purdue.edu\
@@ -26,10 +27,14 @@ Minor in Computer Science
 **Google IT Automation with Python** | April 2021\
 by Google on Coursera\
 Certificate Credential ID: [VE8FAX5RFCQ2](https://www.coursera.org/account/accomplishments/specialization/certificate/VE8FAX5RFCQ2)
-
 -----
+:::
+
+
 
 ## Work Experience
+
+:::{dropdown}
 
 **Continuing Lecturer- EPICS** | 2024-Present\
 Purdue University COE: West Lafayette, IN
@@ -59,8 +64,11 @@ Michigan Technological University: Physics Department: Houghton, MI
   * Repaired lab equipment used in the physics teaching labs.
 
 -----
+:::
 
 ## Achievements
+
+:::{dropdown}
 
 **Outstanding Instructor Recognition** | January 2025\
 Purdue COE
@@ -95,8 +103,11 @@ Purdue ECE
   * Leadership project completed at First United Church of Christ: Green Bay - April, 2012.
 
 -----
+:::
+
 
 ## Academic Involvement
+:::{dropdown}
 
 **Woodrow Wilson Teaching Fellow** | Woodrow Wilson National Fellowship Foundation
 
@@ -126,8 +137,10 @@ Purdue ECE
   * **Applications of ECE Through Reverse Engineering:** Discussed an experimental lab course that revolves around students refining their fundamental ECE skills by reverse engineering commercial products.
 
 -----
+:::
 
 ## Skills
+:::{dropdown}
 
 ### Software:
 
@@ -147,8 +160,10 @@ Purdue ECE
   * **Material Analysis:** Trained in the methods and operation of X-Ray Diffraction, Heat Processing, and Pulse Laser Deposition.
 
 -----
+:::
 
 ## Activities/Community Service
+:::{dropdown}
 
 **Railside Robotics-Combat Robotics Team** | Founding/Lead Advisor: 2023-Present
 Purdue University
@@ -160,3 +175,4 @@ Team 5132 (FRC) and Team 18597 (FTC)
 Troop 1043, Crew 9001, Crew 9443: bsa.org
 
 -----
+:::
