@@ -27,6 +27,7 @@ Minor in Computer Science
 **Google IT Automation with Python** | April 2021\
 by Google on Coursera\
 Certificate Credential ID: [VE8FAX5RFCQ2](https://www.coursera.org/account/accomplishments/specialization/certificate/VE8FAX5RFCQ2)
+
 -----
 :::
 
@@ -141,9 +142,7 @@ Purdue ECE
 
 ## Skills
 :::{dropdown}
-
 ### Software:
-
   * **MATLAB:** Programmed many complex physics and mathematical simulations and various data analysis programs.
   * **SPICE:** Proficient in and have taught SPICE simulation methods across various SPICE platforms.
   * **LaTeX:** Written over 100 professional documents, including research reports, letters of recommendation, and assessments.
@@ -152,7 +151,6 @@ Purdue ECE
   * **CAD:** Experienced in designing and teaching CAD fundamentals in Autodesk Inventor and Onshape.
 
 ### Hardware:
-
   * **CNC:** Constructed and maintained over 20 different multi-axis CNC machines, including printers, plotters, mills, and arms.
   * **Resourceful:** Created a variety of scientific instruments from scrap materials.
   * **Troubleshooting and Repair:** Experienced in fabricating, fixing, and rebuilding experimental equipment and setups.
