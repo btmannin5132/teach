@@ -141,7 +141,8 @@ Purdue ECE
       * Seminar sizes ranged between 20-200 individuals
       * Instructional lab sizes have ranged from 12-60 students.
     * Course topics have ranged from electronics, engineering education, and First-Year-Engineering courses.
-    
+    * Active in course development teams for electronics instructional labs, and First-Year-Engineering courses.
+
 ### Software:
   * **MATLAB:** Programmed many complex physics and mathematical simulations and various data analysis programs.
   * **SPICE:** Proficient in and have taught SPICE simulation methods across various SPICE platforms.
