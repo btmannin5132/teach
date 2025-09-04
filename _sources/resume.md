@@ -7,8 +7,6 @@ title: Resume
 btmannin@purdue.edu\
 *If one seeks to listen, one will learn to lead. If one seeks to lead, one will become a leader.*
 
------
-
 ## Education
 **Doctor of Philosophy: Engineering Education** | 2023-Present\
 Purdue University: West Lafayette, IN, purdue.edu\
