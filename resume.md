@@ -112,10 +112,9 @@ Purdue ECE
   * IRB approved for studying a "tinkering mindset" in engineering students.
 
 **Electronics Fundamentals Instructional Lab development** | 2021-2024
-
-**Purdue ECE Undergraduate Curriculum Committee** | 2024
-
-**Purdue ECE ABET Committee** | 2024
+  * Developed full instructional lab course fouced on electronics fundamentals 
+  * Over 20 sections run each semester, with the assitance of over 50 teaching assistants, and servicing nearly 2,000 per academic year.
+  *Course can be found [here](https://btmannin5132.github.io/teach/courses/ece20007.html)
 
 **Purdue ENE Seminar Speaker** | January 2025
 
@@ -124,7 +123,25 @@ Purdue ECE
 -----
 
 ## Skills
+### Teaching:
+  * **K-12 Education:**
+    * Have taught Physics, Biology, Enviornmental Science, Mechatronics, and an experimental combined Engineering/Computer Science course
+    * Developed and taught new hands-on Mechatronics courses revolving around building/home automation, robotics, PLCs/Microcontroller control, and Industry readiness
+    * Developed combined Engineering/Computer Science readiness corse that aimed to teach engineering and programming fundamentals focused on Python, Arduino, CAD, and developing excitment for personal projects.
+      * Two versions of the course were developed. One for 8th-grade students, another for grades 9-10.
+    * Developed and taught dual-enrollment courses aimed at teaching Mechatronics and motor controlls for students completing a Mechatronics Pathway.
 
+  * **Technical College/Vocational School:**
+    * Have taught a variety of technical Mechatronics based courses at the technical college level revoling around industrial instrumentation, motor controlls, and electric power management.
+
+  * **University:**
+    * Have taught in a variety of teaching settings including lectures, recitations, seminars, and instructional labs.
+      * Lectures sizes have ranged from 30-120 students
+      * Recitation sections of 60 students
+      * Seminar sizes ranged between 20-200 individuals
+      * Instructional lab sizes have ranged from 12-60 students.
+    * Course topics have ranged from electronics, engineering education, and First-Year-Engineering courses.
+    
 ### Software:
   * **MATLAB:** Programmed many complex physics and mathematical simulations and various data analysis programs.
   * **SPICE:** Proficient in and have taught SPICE simulation methods across various SPICE platforms.
