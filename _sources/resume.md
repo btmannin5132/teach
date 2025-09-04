@@ -1,7 +1,8 @@
-
-# Resume
-
-## Benjamin Manning
+---
+layout: page
+title: Resume
+---
+# Resume- Bejmain Manning
 
 btmannin@purdue.edu\
 *If one seeks to listen, one will learn to lead. If one seeks to lead, one will become a leader.*
