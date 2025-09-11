@@ -119,3 +119,13 @@ Updating the code to both the html page, and the arduino code is a little annoyi
 
 In this one, you will just connect to the Arduino using your Wi-Fi connections on your device, and then go to the address [198.162.4.1](http://192.168.4.1/) to access the webapp.  Instructions for adding your own presets are in the code comments.
 
+## CCG Plugins
+
+I have always enjoyed collectable card games (CCGs) and general tabletop games.  One game that I got roped into is Disney's Lorcana.  If you are not familiar, it is essentially Magic the Gathering except with *glimmers* of your favorite Disney characters.  
+
+Just like litterally every other CCG out there, they can be quite expensive, and buying cards before you know you will use them is something I try to avoid if possible.  [LackeyCCG](https://lackeyccg.com/index.html) is an application that allows users to design and distribute plugins for their favorite card games that can be used to design and test new decks before buying the cards. I made one of these for Lorcana.  The update list that can be copied into Lackey can be found here: https://raw.githubusercontent.com/btmannin5132/CCGLorcana/refs/heads/main/updatelist.txt.  
+
+The plugin that I wrote takes all of the card information from the compiled data at [lorcanajson.org](https://lorcanajson.org/) and converts the data into the necessary formats for the plugin to gather the data. 
+
+Feel free to check out the repository [here](https://github.com/btmannin5132/CCGLorcana).
+
