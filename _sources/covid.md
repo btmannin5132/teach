@@ -117,94 +117,50 @@ The additional rolls of filament that have not been used have gone to good use, 
 </div>
 
 
-## Our Donors
 
-<span style="text-align: center; font-weight: bold;font-size: 1.2em;">
 
-Allcox Family
-
-Amber W
-
-Ann E
-
-Anna P
-
-Becky P
-
-Christopher O
-
-Cieslewicz Family
-
-Dahlke Family
-
-Davidhizar Family
-
-Denison Family
-
-Dylan C
-
-Ellen K
-
-Ginger C
-
-Greathouse Family
-
-Heidi B
-
-Jennifer H
-
-Josh D
-
-Judy S
-
-Karen S
-
-Kathy F
-
-Kellie H
-
-Kendra G
-
-Kolash Family
-
-Laurie N
-
-Lori W
-
-Manning Family
-
-Mary P
-
-Mary W
-
-Nancy W
-
-Neville Family
-
-Pat W
-
-Pat D
-
-Paul L
-
-Rachel R
-
-Rebekah B
-
-Stacey S
-
-Tessa B
-
-Todd M
-
-Wanda M
-
-White Family
-
-Wolfe Family
-
-Wright Family
-
-Anonymous Donors: 3
-
-</span>
+| **Our Donors**|
+| :--- |
+| Allcox Family|
+|Amber W|
+|Ann E|
+|Anna P|
+|Becky P|
+|Christopher O|
+|Cieslewicz Family|
+|Dahlke Family|
+|Davidhizar Family|
+|Denison Family|
+|Dylan C|
+|Ellen K|
+|Ginger C|
+|Greathouse Family|
+|Heidi B|
+|Jennifer H|
+|Josh D|
+|Judy S|
+|Karen S|
+|Kathy F|
+|Kellie H|
+|Kendra G|
+|Kolash Family|
+|Laurie N|
+|Lori W|
+|Manning Family|
+|Mary P|
+|Mary W|
+|Nancy W|
+|Neville Family|
+|Pat W|
+|Pat D|
+|Paul L|
+|Rachel R|
+|Rebekah B|
+|Stacey S|
+|Tessa B|
+|Todd M|
+|Wanda M|
+|White Family|
+|Wolfe Family|
+|Wright Family|
+|Anonymous Donors: 3|
