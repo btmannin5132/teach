@@ -5,7 +5,7 @@ permalink: /covid
 ---
 # COVID-19 Work
 
-**Over the course of the COVID-19 Pandemic, Amanda and I worked to provide supplies to medical facilities, local public Service departments, and the general public.  Below is a running tally of everything that we have made during the bulk of the pandemic.**
+**Over the course of the COVID-19 Pandemic, Amanda and I worked to provide supplies to medical facilities, local public Service departments, and the general public.  Below is the tally of everything that we have made during the bulk of the pandemic.**
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
@@ -98,12 +98,7 @@ The additional rolls of filament that have not been used have gone to good use, 
 </div>
 
 
-<p style="text-align: center; font-weight: bold; font-size: 2em;">
-  Our donors:
-
-
-
-</p>
+## Our Donors
 
 <span style="text-align: center; font-weight: bold;font-size: 1.2em;">
 
