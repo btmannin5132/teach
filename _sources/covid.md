@@ -7,6 +7,25 @@ permalink: /covid
 
 **Over the course of the COVID-19 Pandemic, Amanda and I worked to provide supplies to medical facilities, local public Service departments, and the general public.  Below is the tally of everything that we have made during the bulk of the pandemic.**
 
+
+|Items Made     |Quantity| |Items Donated|Quantity|
+|:-------------:|:------:|-|:---------------------:|:------:|
+|Face Masks     |488     | |Filament (Rolls)       |102     |
+|Face Shields   |3250    | |Laminate Sheets (Cases)| 5      |
+|Ear Savers     |    884 | |Yarn (Spools)          | 9      |
+|Face Masks     |     488| |Window Sealant (Pkg)   | 9      |
+|Face Shields   |    3250| |Elastic Bands (Boxes)  | 4      |
+|Ear Savers     |     884|
+|**Total**      |**4622**|
+
+|Spools of Fillament used: | 101|
+|----------------------------:|:------|
+|This equates to: | 222.2 pounds of material|
+|| 20.2 miles of filament|
+
+
+
+<!--
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -85,7 +104,7 @@ permalink: /covid
   </tr>
 </tbody></table>
 
-
+-->
 
 ## THANK YOU!
 To everyone that has donated to help us be successful in this project, we cannot thank you enough for your generosity.  Over the course of this project, we have been able to produce over 3000 products that have gone right back into our community and the nation, helping protect those around us. We have received donations from at least 5 states, and have distributed supplies to 14 states around the United States. 
