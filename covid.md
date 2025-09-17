@@ -120,7 +120,7 @@ The additional rolls of filament that have not been used have gone to good use, 
 
 
 | **Our Donors**|
-| :--- |
+| :---: |
 | Allcox Family|
 |Amber W|
 |Ann E|
