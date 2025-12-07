@@ -58,7 +58,11 @@ Michigan Technological University: Physics Department: Houghton, MI
 -----
 
 ## Achievements
-**Outstanding Instructor Recognition** | January 2025\
+**Outstanding Instructor Award** | December 2025\
+Eta Kappa Nu
+  * Recognized by the ECE Honor Society for dedication to the education of Engineering students
+
+**Outstanding Instructor Recognition** | January 2025, May 2025\
 Purdue COE
 
   * Recognized by the college for outstanding instructor reviews from students for the previous semester.
@@ -118,6 +122,9 @@ Purdue ECE
 **Purdue ENE Seminar Speaker** | January 2025
 
   * **Applications of ECE Through Reverse Engineering:** Discussed an experimental lab course that revolves around students refining their fundamental ECE skills by reverse engineering commercial products.
+
+**2025 Frontiers in Education Presenter:** 
+  * WIP: Using Reverse Engineering to Enhance Student Confidence and Interest in Electrical and Computer Engineering
 
 -----
 

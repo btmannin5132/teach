@@ -6,11 +6,11 @@ Site can be found here: https://btmannin5132.github.io/teach/
 
 Steps for publishing:
 
-Install jupyter books if needed:
+Install jupyter books if needed: (I am using an older version and didn't feel like updating)
 
-$ `pip install -U jupyter-book`
+$ `pip install -U 'jupyter-book<2'`
 
-$ `pip install ghp-import`
+$ `pip install 'ghp-import<2'`
 
 Create book if needed:
 $ `jupyter-book create mybook`
