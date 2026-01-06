@@ -8,6 +8,8 @@ permalink: /courses/reverse-engineering
 
 One of my main works at the beginning of my PhD is developing a course that will proivde students a space to explore electronics more freely, while promoting techincal communicaton and life-long learning.  To complete all of these tasks, a reverse engineering course has been developed.  Below are the different resources for this course:
 
+[Course Website](https://btmannin5132.github.io/RevEng/index.html)
+
 [Course outline at Purdue University](https://purdue0-my.sharepoint.com/:x:/g/personal/btmannin_purdue_edu/EeeheHDieFBNlFQWLHX2BYcBhHNgxmslS-zObXaPFsf9iQ?e=IpfjLv)
 
 [Theoretical Framework for Reverse Engineering as a course](https://purdue0-my.sharepoint.com/:w:/g/personal/btmannin_purdue_edu/EXF8QX7lJsRLs4VMcQZF-w0BJrcmGq_dLNjfvcdT4DCZGw?e=0Ac3Fl)
