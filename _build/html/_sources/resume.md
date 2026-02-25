@@ -34,7 +34,7 @@ Purdue University COE: West Lafayette, IN
   * Mentor Purdue student EPICS teams on various community-centered projects.
 
 **Senior Instructional Lab Coordinator, Associate Director of Undergraduate Labs- Curriculum** | 2021-2024\
-Purdue University ECE: West Lafayette, IN\
+Purdue University ECE: West Lafayette, IN
   * Collaborated with faculty and staff to develop, refine, and support innovative instructional methods in labs.
   * Supervised and trained other lab coordinators and students to lead instructional labs.
 
@@ -59,7 +59,7 @@ Michigan Technological University: Physics Department: Houghton, MI
 
 ## Achievements
 **Outstanding Instructor Award** | December 2025\
-Eta Kappa Nu
+Eta Kappa Nu: Purdue University Chapter
   * Recognized by the ECE Honor Society for dedication to the education of Engineering students
 
 **Outstanding Instructor Recognition** | January 2025, May 2025\
@@ -125,6 +125,8 @@ Purdue ECE
 
 **2025 Frontiers in Education Presenter:** 
   * WIP: Using Reverse Engineering to Enhance Student Confidence and Interest in Electrical and Computer Engineering
+  https://ieeexplore.ieee.org/abstract/document/11328350
+  Let me know if you would like a copy of the article.
 
 -----
 
@@ -142,7 +144,7 @@ Purdue ECE
 
   * **University:**
     * Have taught in a variety of teaching settings including lectures, recitations, seminars, and instructional labs.
-      * Lectures sizes have ranged from 30-120 students
+      * Lectures sizes have ranged from 30-500 students
       * Recitation sections of 60 students
       * Seminar sizes ranged between 20-200 individuals
       * Instructional lab sizes have ranged from 12-60 students.
