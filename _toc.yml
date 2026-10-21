@@ -29,6 +29,12 @@ chapters:
 
 - file: projects
 
+- file: Workshops
+  title: "Workshop Development"
+  sections:
+    - file: workshops/halloween
+      title: "Halloween Animatronics"
+
 - file: covid
 
 - file: contact
