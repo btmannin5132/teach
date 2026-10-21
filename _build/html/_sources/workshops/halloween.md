@@ -24,15 +24,17 @@ The end product of this workshop is a small animatronic diorama of a haunted hou
 
 ## Materials & Classroom Budget
 
-Ideally, this project can be completed for **less than $10 USD per student station**. Generic Arduino Nanos go for about $3 on your preferred online seller when you purchase packs of 3 or more, so you’ll have plenty ready for future projects!
+Ideally, this project can be completed for less than 10 USD per student station. Generic Arduino Nanos go for about $3 on your preferred online seller when you purchase packs of 3 or more, so you’ll have plenty ready for future projects!
 
 ### General Tools
+
 * Scissors or craft knives
 * Hot glue guns (low-temperature works great for high school)
 * Computer with the [Arduino IDE installed](https://www.arduino.cc/en/software/)
 * USB cable to connect with your Arduino (Arduino Nano clones typically use USB-Mini, Micro, or USB-C depending on the model)
 
 ### Consumables
+
 * Tissues, pipe cleaners, cotton balls, or whatever else you want to make your creepy figure with
 * 1x Arduino control board (I’ll be using an Arduino Nano)
 * Jumper wires
