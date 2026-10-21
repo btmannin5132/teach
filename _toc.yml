@@ -29,7 +29,7 @@ chapters:
 
 - file: projects
 
-- file: Workshops
+- file: workshops
   title: "Workshop Development"
   sections:
     - file: workshops/halloween
