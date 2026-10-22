@@ -18,7 +18,7 @@ The main goal of this workshop is to show students that you don't need crazy equ
 
 The end product of this workshop is a small animatronic diorama of a haunted house, grave, creepy tree, or whatever spooky setting you decide to build. A ghost, spider, bat, or other creepy figure pops out when someone or something moves past and casts a shadow over it.
 
-<video src="../_static/assets/videos/halloween1.mp4" width="320" height="240" alt = "A ghost popping out from behind a house" controls></video>
+<video src="../_static/assets/videos/halloween1.mp4" height="240" alt = "A ghost popping out from behind a house" controls></video>
 
 ---
 
@@ -70,6 +70,7 @@ For the demonstration, I made a simple ghost that pops out of the house. This fi
 The key requirement is to keep it fairly lightweight so the motor can move it quickly without stalling. Most micro servos can comfortably move around 2 ounces (about 50-75 grams) on a short lever arm, so there is plenty of room for creativity.
 
 For my ghost, I balled up a couple of tissues into a small sphere, then draped another tissue over the ball to make it look like a flowing sheet. I used a spare zip tie to loosely secure the tissue around the neck, and drew a face on it with a marker.
+
 <img src="../_static/assets/images/ghost.jpg" height="240" alt="A tissue ghost">
 
 ---
