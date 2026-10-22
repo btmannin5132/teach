@@ -264,6 +264,7 @@ Once these connections are made and your code is uploaded, test it out by passin
 Here is what my completed diorama looks like from the back with everything wired together:
 
 <img src="../_static/assets/images/box3.jpeg" height="240" alt="finished wired diorama">
+
 ---
 
 ## Extension: Auto-Calibrating Ambient Light
