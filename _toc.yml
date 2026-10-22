@@ -19,7 +19,7 @@ chapters:
     - file: masters/eqs
     - file: masters/intern
 
-- file: Policy
+- file: policy
   title: "Educational Policy"
   sections:
     - file: policies/tinkering-felony
