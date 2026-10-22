@@ -19,6 +19,12 @@ chapters:
     - file: masters/eqs
     - file: masters/intern
 
+- file: Policy
+  title: "Educational Policy"
+  sections:
+    - file: policies/tinkering-felony
+      title: "The felony of Tinkering"
+
 - file: courses
   title: "Course Development"
   sections:

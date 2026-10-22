@@ -10,7 +10,7 @@ This workshop was designed to introduce first-year engineering students and high
 
 Animatronics are often seen as these complex, human-like robots that can either act like animals or sing a song on stage at a theme park.
 
-The main goal of this workshop is to show students that you don't need crazy equipment, specialized tools, or a lot of initial money to get started in animatronics or robotics in general. The neat thing about simple robotics and animatronics projects is that the electronics and code don't actually change a whole lot. The example we are using in this workshop can be applied to a wide variety of animatronics that react to light or movement. The most time-consuming part—and arguably the most fun part—is developing the shells and environments that your animatronics live in. Those giant 12-foot skeletons in front yards can be set up in a very similar way; the main difference is that you will likely need bigger high-torque motors, heavier mechanical rigging for the arms and head, and a weatherproof enclosure for your electronics.
+The main goal of this workshop is to show students that you don't need crazy equipment, specialized tools, or a lot of initial money to get started in animatronics or robotics in general. The neat thing about simple robotics and animatronics projects is that the electronics and code don't actually change a whole lot. The example we are using in this workshop can be applied to a wide variety of animatronics that react to light or movement. The most time-consuming part, and arguably the most fun part, is developing the shells and environments that your animatronics live in. Those giant 12-foot skeletons in front yards can be set up in a very similar way; the main difference is that you will likely need bigger high-torque motors, heavier mechanical rigging for the arms and head, and a weatherproof enclosure for your electronics.
 
 ---
 
@@ -18,7 +18,7 @@ The main goal of this workshop is to show students that you don't need crazy equ
 
 The end product of this workshop is a small animatronic diorama of a haunted house, grave, creepy tree, or whatever spooky setting you decide to build. A ghost, spider, bat, or other creepy figure pops out when someone or something moves past and casts a shadow over it.
 
-<video src="_static/assets/videos/halloween1.mp4" width="320" height="240" controls></video>
+<video src="../_static/assets/videos/halloween1.mp4" width="320" height="240" alt = "A ghost popping out from behind a house" controls></video>
 
 ---
 
@@ -57,7 +57,7 @@ Making the diorama will vary depending on what type of box you have and how larg
 
 I made a cut along the sides of the lid to allow for simpler folding, folded it up to a right angle, and taped it in place.
 
-<img src="../_static/assets/images/box1.jpg" height="240" alt="box top for diorama">
+<img src="../_static/assets/images/box2.jpg" height="240" alt="box top for diorama">
 
 After folding, I cut my box into the 2D profile of a haunted house, added some drawings, and called it good for the sake of demonstration. Feel free to get as creative and spooky as you want with this!
 
@@ -95,7 +95,7 @@ This is all handled by the Arduino, which reads the analog data from the photore
 
 A resistor inside of a circuit has one job: to resist electrical current. That limitation of current may sound unhelpful at first, but it allows us to do some pretty awesome things.
 
-A photoresistor is a special type of resistor that changes how much it resists electrical current based on how much light is hitting it. When it is dark around the photoresistor, it has very high resistance—sometimes on the order of a Megaohm ($1\text{ M}\Omega$). When it is bright, the resistance decreases significantly, often dropping down to just tens or hundreds of Ohms. The photoresistor relies on some neat semiconductor physics (the photoelectric effect) to do this, so feel free to explore that with your students if they are curious!
+A photoresistor is a special type of resistor that changes how much it resists electrical current based on how much light is hitting it. When it is dark around the photoresistor, it has very high resistance, sometimes on the order of a Megaohm ($1\text{ M}\Omega$). When it is bright, the resistance decreases significantly, often dropping down to just tens or hundreds of Ohms. The photoresistor relies on some neat semiconductor physics (the photoelectric effect) to do this, so feel free to explore that further if you are curious!
 
 The tricky part is that Arduinos cannot measure electrical resistance or current directly; they can only measure changes in **voltage**. In order to make the photoresistor output a voltage that our board can read, we set it up using one of my personal favorite circuits: a **voltage divider**.
 
@@ -149,7 +149,7 @@ void loop() {
 }
 ```
 
-Using this code and our circuit, as your hand casts a shadow over the photoresistor, the value printed to the Serial Monitor will get smaller. Have your students jot down their room's normal ambient reading and what the reading drops to when they cover the sensor.
+Using this code and our circuit, as your hand casts a shadow over the photoresistor, the value printed to the Serial Monitor will get smaller. Jot down the room's normal ambient reading and what the reading drops to when they cover the sensor.
 
 ---
 
@@ -193,7 +193,7 @@ void loop() {
 
 Now that we have a reliable way to monitor shadows in the room, let's tell the servo to pop our figure up when the lights dim. 
 
-The `Servo` library makes this easy: we attach the servo to a digital pin and command it using `.write(angle)`.
+The `Servo` library makes this straight forward: we attach the servo to a digital pin and command it using `.write(angle)`.
 
 ```cpp
 // Step 3: Pop-Up Animatronic Controller
@@ -231,7 +231,7 @@ void loop() {
   // When someone walks by and casts a shadow, pop out!
   if (sensorValue < darkThreshold) {
     myServo.write(posPopped);
-    delay(1000); // Hold visible for 1 second so the scare lands
+    delay(1000); // Hold visible for 1s
   } else {
     myServo.write(posHidden); // Return to hiding
   }
@@ -246,7 +246,7 @@ That’s all the code we need to run the diorama! Now let’s wire and mount eve
 
 ## Putting It All Together
 
-1. **Attach the Linkage Wire:** Straighten out a paperclip or a piece of stiff craft wire. Attach your spooky figure to one end using hot glue or tape. Attach the other end to one of the small plastic horn arms that came with your servo. The paperclip should fit snugly into one of the horn holes. If it wiggles just a tiny bit, that’s actually fine—it might even add some extra rattling, spooky character to your figure!
+1. **Attach the Linkage Wire:** Straighten out a paperclip or a piece of stiff craft wire. Attach your spooky figure to one end using hot glue or tape. Attach the other end to one of the small plastic horn arms that came with your servo. The paperclip should fit snugly into one of the horn holes. If it wiggles just a tiny bit, that’s actually fine, it might even add some extra rattling, spooky character to your figure!
 2. **Mount the Servo:** Glue or tape the servo body inside your diorama box so that when the horn rotates, the figure swings up cleanly over the edge or through a window cutout.
 3. **Mount the Photoresistor:** Poke a small hole in the front of your diorama box so the head of the photoresistor can peek through toward the room. Hot glue it gently in place from the back, leaving the metal leads free and unbent so you can attach jumper wires.
 4. **Wire the Sensor Circuit:**
@@ -261,11 +261,14 @@ That’s all the code we need to run the diorama! Now let’s wire and mount eve
 
 Once these connections are made and your code is uploaded, test it out by passing your hand across the front of the diorama. You should see your servo snap to life and pop your figure out!
 
+Here is what my completed diorama looks like from the back with everything wired together:
+
+<img src="../_static/assets/images/box3.jpeg" height="240" alt="finished wired diorama">
 ---
 
 ## Extension: Auto-Calibrating Ambient Light
 
-Classroom lighting changes throughout the day, and different desks may be under direct fluorescent fixtures while others are in dim corners. Instead of having students guess and hardcode a manual threshold number, we can write a quick calibration routine in `setup()`.
+Room lighting changes throughout the day, and different tables or desks may be under direct fluorescent fixtures while others are in dim corners. Instead of having to guess and hardcode a manual threshold number, we can write a quick calibration routine in `setup()`.
 
 When the Arduino boots, it takes several readings to find the average ambient light level of the room, and automatically calculates a trigger threshold at 80% of that baseline. That means this sketch works right out of the box in bright classrooms dim hallways, or even outside without changing a single line of code!
 
@@ -342,4 +345,4 @@ void setThresh() {
 
 ## Great Job!
 
-That is all there is to it to get started with animatronics! This is a simple pop-up mechanism, but the exact same workflow applies to larger, more complex builds. From here, you and your students can add LEDs that flash red eyes, piezo buzzers or sound boards that play spooky screams, or multiple servos linked together. Have fun building!
+That is all there is to it to get started with animatronics! This is a simple pop-up mechanism, but the exact same workflow applies to larger, more complex builds. From here, you can add LEDs that flash red eyes, piezo buzzers or sound boards that play spooky screams, or multiple servos linked together. Have fun building!
