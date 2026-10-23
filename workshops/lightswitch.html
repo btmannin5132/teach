@@ -1,0 +1,790 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Making an Automatic Light Switch &#8212; Ben Manning&#39;s Teaching Portfolio</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'workshops/lightswitch';</script>
+    <link rel="icon" href="../_static/favicon1.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Halloween Animatronics Workshop" href="halloween.html" />
+    <link rel="prev" title="Workshops Development" href="../workshops.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo1.png" class="logo__image only-light" alt="Ben Manning's Teaching Portfolio - Home"/>
+    <script>document.write(`<img src="../_static/logo1.png" class="logo__image only-dark" alt="Ben Manning's Teaching Portfolio - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resume.html">Resume</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../phd.html">PhD in Engineering Education</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../phd/application-documents.html">Application Documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../phd/graduate-competencies.html">Graduate Competencies</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../masters.html">Master of Arts in Teaching</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../masters/eqs.html">Essential Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../masters/intern.html">Intern Keys</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../policy.html">Educational Policy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../policies/tinkering-felony.html">The felony of Tinkering</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../courses.html">Course Development</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../courses/ece20007.html">ECE20007- Electronics Fundamentals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../courses/reverse-engineering.html">Reverse Engineering</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects.html">Personal Projects</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../workshops.html">Workshop Development</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Automatic Lightswitch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="halloween.html">Halloween Animatronics</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../covid.html">COVID-19 Work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Contact Ben Manning</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/btmannin5132/teach" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/btmannin5132/teach/issues/new?title=Issue%20on%20page%20%2Fworkshops/lightswitch.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/workshops/lightswitch.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Making an Automatic Light Switch</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructor-overview-classroom-notes">Instructor Overview &amp; Classroom Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials-tools">Materials &amp; Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electronics-per-student-or-pair">Electronics (Per Student or Pair)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works-breaking-down-the-sub-circuits">How It Works: Breaking Down the Sub-Circuits</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-circuit-1-the-p-channel-mosfet-switch">Sub-Circuit 1: The P-Channel MOSFET Switch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-circuit-2-the-photoresistor-voltage-divider">Sub-Circuit 2: The Photoresistor Voltage Divider</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-the-sub-circuits">Combining the Sub-Circuits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#breadboard-assembly-guide">Breadboard Assembly Guide</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-set-up-power-rails">Step 1: Set Up Power Rails</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-build-sub-circuit-1-the-mosfet-switch-one-side-of-the-bridge">Step 2: Build Sub-Circuit 1 — The MOSFET Switch (One Side of the Bridge)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-build-sub-circuit-2-the-voltage-divider-sensor-across-the-bridge">Step 3: Build Sub-Circuit 2 — The Voltage Divider Sensor (Across the Bridge)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-link-the-sub-circuits-across-the-bridge">Step 4: Link the Sub-Circuits Across the Bridge</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-power-on-and-test">Step 5: Power On and Test</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classroom-troubleshooting-tips">Classroom Troubleshooting Tips</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-next-extending-the-lesson">What’s Next? (Extending the Lesson)</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="making-an-automatic-light-switch">
+<h1>Making an Automatic Light Switch<a class="headerlink" href="#making-an-automatic-light-switch" title="Link to this heading">#</a></h1>
+<p>Ever wonder how the lamp posts on the street turn on when it gets dark outside? There isn’t a person walking around flipping a giant switch at dusk, it all happens automatically! Even better, that entire automated process can be designed and built on a breadboard in just a few minutes with a handful of inexpensive parts.</p>
+<p>As electrical and computer engineers, we have all kinds of tools at our disposal to let electronic systems interact with their environment. Most of the time, that starts with <strong>sensors</strong>.</p>
+<p>In this workshop, we use a <strong>photoresistor</strong> (a sensor that changes its electrical resistance depending on how bright it is) paired with a <strong>transistor</strong> (an electronic switch). When the light level drops, our circuit detects the change and automatically turns a light on.</p>
+<p>This project is a fantastic, hands-on way to introduce high schoolers and first-year engineering students to fundamental ECE concepts: reading circuit schematics, understanding voltage dividers, using transistors as solid-state switches, and translating paper diagrams onto a real breadboard.</p>
+<hr class="docutils" />
+<section id="instructor-overview-classroom-notes">
+<h2>Instructor Overview &amp; Classroom Notes<a class="headerlink" href="#instructor-overview-classroom-notes" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Target Audience:</strong> High school physics / STEM clubs, introductory engineering workshops, or first-year university engineering labs.</p></li>
+<li><p><strong>Estimated Time:</strong> 45 to 60 minutes.</p></li>
+<li><p><strong>Core Concepts:</strong></p>
+<ul>
+<li><p>Sensors &amp; variable resistance (photoresistors / LDRs).</p></li>
+<li><p>Voltage division and Kirchoff’s Voltage Law (<span class="math notranslate nohighlight">\(V = I \cdot R\)</span>).</p></li>
+<li><p>MOSFETs operating as electronic switches (Gate threshold voltage <span class="math notranslate nohighlight">\(V_{GS}\)</span>).</p></li>
+<li><p>Translating a circuit schematic into physical breadboard connections.</p></li>
+</ul>
+</li>
+<li><p>There is <strong>no programming required</strong> for this build! That makes it a good pure hardware lab for students who may be intimidated by coding, or as a standalone electronics module before diving into microcontrollers like Arduinos.  This can also be done <strong>after</strong> students have a bit of programming experience to show that we don’t always need to use a microcontroller to do basic tasks.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="materials-tools">
+<h2>Materials &amp; Tools<a class="headerlink" href="#materials-tools" title="Link to this heading">#</a></h2>
+<p>You can source these components in bulk for less than a couple of dollars per student station.</p>
+<section id="electronics-per-student-or-pair">
+<h3>Electronics (Per Student or Pair)<a class="headerlink" href="#electronics-per-student-or-pair" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>1x <strong>Half-Size Solderless Breadboard</strong></p></li>
+<li><p>1x <strong>N-Channel MOSFET Transistor</strong> (e.g., IRLZ44N, 2N7000, or similar logic-level N-channel MOSFET)</p></li>
+<li><p>1x <strong>Photoresistor (LDR)</strong> (e.g., standard 5mm GL5528)</p></li>
+<li><p>1x <span class="math notranslate nohighlight">\(\text{approx }5\text{ k}\Omega\)</span> <strong>Resistor</strong> (Have a few values available between 1k and 10k if you want students to tune sensitivity) This can also be done with a potentiometer if you want simpler variation.</p></li>
+<li><p>1x <strong>LED or Low-Voltage Lamp</strong> (standard 5mm LED)</p></li>
+<li><p>1x If using an LED: <span class="math notranslate nohighlight">\(220\,\Omega\)</span> Current-Limiting Resistor</p></li>
+<li><p>1x <strong>5V Power Source</strong> (I reccomend a stripped USB cable with the red and black wires extended with jumper wire, and a USB power block like what you use to charge your phone)</p></li>
+<li><p>6–10x <strong>Jumper Wires</strong> (male-to-male)</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="how-it-works-breaking-down-the-sub-circuits">
+<h2>How It Works: Breaking Down the Sub-Circuits<a class="headerlink" href="#how-it-works-breaking-down-the-sub-circuits" title="Link to this heading">#</a></h2>
+<p>When looking at a full schematic for the first time, students often feel overwhelmed. The secret to making circuit design approachable is breaking complex systems into <strong>sub-circuits</strong>.</p>
+<p>To make a switch that turns on when it gets dark, we only need two sub-circuits working together:</p>
+<ol class="arabic simple">
+<li><p><strong>The Switch Circuit:</strong> Uses a transistor to turn the lamp on and off.</p></li>
+<li><p><strong>The Sensor Circuit:</strong> Uses a voltage divider with a photoresistor to monitor ambient light.</p></li>
+</ol>
+<hr class="docutils" />
+<section id="sub-circuit-1-the-p-channel-mosfet-switch">
+<h3>Sub-Circuit 1: The P-Channel MOSFET Switch<a class="headerlink" href="#sub-circuit-1-the-p-channel-mosfet-switch" title="Link to this heading">#</a></h3>
+<p>A mechanical switch requires physical movement to open or close a circuit. A <strong>transistor</strong>, on the other hand, is an electrical switch with no moving parts.</p>
+<p>In our setup, we use a <strong>P-Channel MOSFET</strong> (pMOS). A MOSFET has three terminals:</p>
+<ul class="simple">
+<li><p><strong>Source (S):</strong> Connected to the positive power rail (<span class="math notranslate nohighlight">\(+5\text{V}\)</span>).</p></li>
+<li><p><strong>Gate (G):</strong> The control input. Think of this as the valve handle.</p></li>
+<li><p><strong>Drain (D):</strong> Where current flows out to our load (the lamp/LED) on its way to Ground.</p></li>
+</ul>
+<p>A P-channel MOSFET turns on based on the voltage difference between its Gate and Source (<span class="math notranslate nohighlight">\(V_{GS} = V_{\text{Gate}} - V_{\text{Source}}\)</span>):</p>
+<ul class="simple">
+<li><p>Since the Source is tied directly to <span class="math notranslate nohighlight">\(+5\text{V}\)</span>, <span class="math notranslate nohighlight">\(V_{GS} = V_{\text{Gate}} - 5\text{V}\)</span>.</p></li>
+<li><p><strong>When the Gate is pulled high (near <span class="math notranslate nohighlight">\(+5\text{V}\)</span>):</strong> <span class="math notranslate nohighlight">\(V_{GS} \approx 0\text{V}\)</span>. The transistor is <strong>OFF</strong>, and no current flows to the lamp.</p></li>
+<li><p><strong>When the Gate is pulled low (toward <span class="math notranslate nohighlight">\(0\text{V}\)</span>):</strong> <span class="math notranslate nohighlight">\(V_{GS}\)</span> drops toward <span class="math notranslate nohighlight">\(-5\text{V}\)</span>. Once <span class="math notranslate nohighlight">\(V_{GS}\)</span> drops below the negative threshold voltage (<span class="math notranslate nohighlight">\(V_{GS(\text{th})}\)</span>), the channel opens up. The transistor turns <strong>ON</strong>, lighting up the lamp.</p></li>
+</ul>
+<img src="../_static/assets/images/switchMos.png" alt="P-Channel MOSFET Switch Sub-Circuit" height="200">
+</section>
+<hr class="docutils" />
+<section id="sub-circuit-2-the-photoresistor-voltage-divider">
+<h3>Sub-Circuit 2: The Photoresistor Voltage Divider<a class="headerlink" href="#sub-circuit-2-the-photoresistor-voltage-divider" title="Link to this heading">#</a></h3>
+<p>Our sensor is a <strong>photoresistor</strong>, whose resistance changes depending on ambient light:</p>
+<ul class="simple">
+<li><p><strong>In bright light:</strong> Its resistance drops significantly (down to a few hundred or even tens of Ohms).</p></li>
+<li><p><strong>In the dark:</strong> Its resistance skyrockets (often to hundreds of thousands of Ohms or Mega-Ohms).</p></li>
+</ul>
+<p>Because transistors react to <em>voltage</em> at their Gate rather than raw resistance, we arrange the photoresistor into a <strong>voltage divider</strong>.</p>
+<p>By placing the photoresistor between the <span class="math notranslate nohighlight">\(5\text{V}\)</span> rail and our sense node, and a fixed resistor between the sense node and Ground (<span class="math notranslate nohighlight">\(0\text{V}\)</span>), the voltage at the center node is determined by:</p>
+<div class="math notranslate nohighlight">
+\[
+V_{\text{Gate}} = V_{\text{in}} \cdot \frac{R_{\text{fixed}}}{R_{\text{photo}} + R_{\text{fixed}}}
+\]</div>
+<ul class="simple">
+<li><p><strong>When it’s light out:</strong> <span class="math notranslate nohighlight">\(R_{\text{photo}}\)</span> is tiny compared to <span class="math notranslate nohighlight">\(R_{\text{fixed}}\)</span>. Most of the voltage drop occurs across <span class="math notranslate nohighlight">\(R_{\text{fixed}}\)</span>, keeping <span class="math notranslate nohighlight">\(V_{\text{Gate}}\)</span> high.</p></li>
+<li><p><strong>When it gets dark:</strong> <span class="math notranslate nohighlight">\(R_{\text{photo}}\)</span> shoots way up, taking almost all the voltage drop and pulling <span class="math notranslate nohighlight">\(V_{\text{Gate}}\)</span> down close to zero.</p></li>
+</ul>
+<p><em>(Teacher tip: If you only have N-channel MOSFETS, you can still do this, but the logic gets flipped.  You may want to swap the position of the fixed resistor and the photoresistor so that the lamp turns off when it gets dark instead of the lamp turning on when it is bright!)</em></p>
+<img src="../_static/assets/images/switchPhoto.png" alt="Voltage Divider Sub-Circuit Schematic" height="200">
+</section>
+<hr class="docutils" />
+<section id="combining-the-sub-circuits">
+<h3>Combining the Sub-Circuits<a class="headerlink" href="#combining-the-sub-circuits" title="Link to this heading">#</a></h3>
+<p>When we connect the output of the voltage divider directly into the Gate of our MOSFET, the two sub-circuits merge into one unified, automatic system:</p>
+<img src="../_static/assets/images/switchFull.png" alt="Combined Automatic Switch Schematic" height="260">
+<p>This may look complicated at first glance, but with a little practice, reading schematics like this will quickly become second nature to your students!</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="breadboard-assembly-guide">
+<h2>Breadboard Assembly Guide<a class="headerlink" href="#breadboard-assembly-guide" title="Link to this heading">#</a></h2>
+<p>When teaching this build especially for people new to breadboards, laying everything out randomly on the board makes debugging really tricky, and conceptually hard to follow. Instead, I reccomend taking advantage of the breadboard’s <strong>center divider (the bridge)</strong> to physically separate our two sub-circuits:</p>
+<ul class="simple">
+<li><p><strong>Side A (e.g., Top Rows / Columns f–j):</strong> Hosts <strong>Sub-Circuit 1</strong> (the MOSFET switch and the lamp).</p></li>
+<li><p><strong>Side B (e.g., Bottom Rows / Columns a–e):</strong> Hosts <strong>Sub-Circuit 2</strong> (the Photoresistor voltage divider sensor).</p></li>
+<li><p><strong>The “Bridge” Jumper:</strong> A single wire jumping across the center divider ties the sensor output to the transistor’s gate control.</p></li>
+</ul>
+<img src="../_static/assets/images/switchbb.png" alt="Breadboard Wiring Layout" height="260">
+<section id="step-1-set-up-power-rails">
+<h3>Step 1: Set Up Power Rails<a class="headerlink" href="#step-1-set-up-power-rails" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Connect your 5V power source positive lead (<span class="math notranslate nohighlight">\(+5\text{V}\)</span>) to the red <span class="math notranslate nohighlight">\((+)\)</span> rail.</p></li>
+<li><p>Connect your ground lead to the blue <span class="math notranslate nohighlight">\((-)\)</span> rail.</p></li>
+<li><p>If your breadboard has power rails on both sides, use jumper wires to bridge the top and bottom <span class="math notranslate nohighlight">\((+)\)</span> rails together and the top and bottom <span class="math notranslate nohighlight">\((-)\)</span> rails together so both sides have access to power and ground.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="step-2-build-sub-circuit-1-the-mosfet-switch-one-side-of-the-bridge">
+<h3>Step 2: Build Sub-Circuit 1 — The MOSFET Switch (One Side of the Bridge)<a class="headerlink" href="#step-2-build-sub-circuit-1-the-mosfet-switch-one-side-of-the-bridge" title="Link to this heading">#</a></h3>
+<p>Work entirely on one side of the center trough (for example, rows in columns <strong>f–j</strong>):</p>
+<ol class="arabic">
+<li><p><strong>Insert the P-Channel MOSFET:</strong> Plug the three legs of the pMOS into three adjacent rows across the bridge (for example, rows 10, 11, and 12).</p>
+<ul class="simple">
+<li><p>Note which pin is <strong>Gate (G)</strong>, <strong>Drain (D)</strong>, and <strong>Source (S)</strong> according to your specific component’s datasheet. (On common TO-220 packages, the pinout from left-to-right facing the label is typically <strong>1: Gate, 2: Drain, 3: Source</strong>).</p></li>
+</ul>
+</li>
+<li><p><strong>Connect Source to Power:</strong> Run a jumper wire from the row with the <strong>Source pin</strong> directly to the <span class="math notranslate nohighlight">\(+5\text{V}\)</span> rail.</p></li>
+<li><p><strong>Wire the Lamp / LED Load:</strong></p>
+<ul class="simple">
+<li><p>Run a jumper wire or lead from the <strong>Drain pin</strong> row to a new open row on this same side of the board.</p></li>
+</ul>
+<p>If using a lamp:</p>
+<ul class="simple">
+<li><p>Insert one lead of the lamp into the same row that the jumper wire ends in.  Place the other lead in an unused row.</p></li>
+<li><p>Use a jumper wire to connect the other lead of the lamp to the Ground <span class="math notranslate nohighlight">\((-)\)</span> rail.</p></li>
+</ul>
+<p>If using an LED:</p>
+<ul class="simple">
+<li><p>If using an LED, Insert the long lead (anode) of your LED into that row.</p></li>
+<li><p>Place a current-limiting resistor (<span class="math notranslate nohighlight">\(100\,\Omega\)</span> to <span class="math notranslate nohighlight">\(220\,\Omega\)</span>) from the short lead (cathode) of the LED directly to the Ground <span class="math notranslate nohighlight">\((-)\)</span> rail.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="step-3-build-sub-circuit-2-the-voltage-divider-sensor-across-the-bridge">
+<h3>Step 3: Build Sub-Circuit 2 — The Voltage Divider Sensor (Across the Bridge)<a class="headerlink" href="#step-3-build-sub-circuit-2-the-voltage-divider-sensor-across-the-bridge" title="Link to this heading">#</a></h3>
+<p>Now move across the central dividing trench to the opposite set of rows (columns <strong>a–e</strong>):</p>
+<ol class="arabic simple">
+<li><p>Pick a dedicated tie-point row (e.g., row 15 on the other side of the bridge). This row will serve as our <strong>Voltage Divider output junction</strong>.</p></li>
+<li><p><strong>Photoresistor (High Side):</strong> Place one leg of the photoresistor into the <span class="math notranslate nohighlight">\(+5\text{V}\)</span> power rail and the other leg into your chosen junction row.</p></li>
+<li><p><strong>10kΩ Resistor (Low Side):</strong> Place one leg of the <span class="math notranslate nohighlight">\(10\text{ k}\Omega\)</span> resistor into that same junction row and the other leg into the Ground <span class="math notranslate nohighlight">\((-)\)</span> rail.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="step-4-link-the-sub-circuits-across-the-bridge">
+<h3>Step 4: Link the Sub-Circuits Across the Bridge<a class="headerlink" href="#step-4-link-the-sub-circuits-across-the-bridge" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Take a single jumper wire.</p></li>
+<li><p>Plug one end into the <strong>Voltage Divider junction row</strong> (on the sensor side).</p></li>
+<li><p>Stretch it across the central bridge and plug the other end directly into the row containing the <strong>Gate pin</strong> of the MOSFET (on the switch side).</p></li>
+</ol>
+<p>That single jumper carries the sensing voltage from the photoresistor divider directly into the control terminal of the transistor switch!</p>
+</section>
+<hr class="docutils" />
+<section id="step-5-power-on-and-test">
+<h3>Step 5: Power On and Test<a class="headerlink" href="#step-5-power-on-and-test" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Turn on or plug in your 5V power supply.</p></li>
+<li><p>In regular room lighting, the lamp/LED should remain completely off.</p></li>
+<li><p>Cup your hand or place your thumb over the photoresistor to cast a deep shadow. The light should immediately turn on!</p></li>
+<li><p>Remove your hand to let light back in—the light turns right back off, just like a street lamp at sunrise.</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="classroom-troubleshooting-tips">
+<h2>Classroom Troubleshooting Tips<a class="headerlink" href="#classroom-troubleshooting-tips" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>The light stays on all the time:</strong></p>
+<ul>
+<li><p>The room may already be too dark for the fixed resistor value chosen. Try replacing the fixed resistor with a smaller value, or swap in a <span class="math notranslate nohighlight">\(10\text{ k}\Omega\text{--}50\text{ k}\Omega\)</span> potentiometer so students can adjust the threshold for your specific classroom lighting.</p></li>
+<li><p>Check the transistor pinout. Connecting Drain and Source backward can cause current to flow through the MOSFET’s internal body diode regardless of gate voltage.</p></li>
+</ul>
+</li>
+<li><p><strong>The light never turns on:</strong></p>
+<ul>
+<li><p>Verify that the power rails actually have voltage using a multimeter.</p></li>
+<li><p>Check the LED orientation if you are using an LED instead of an incandescent bulb (longer leg = anode / positive).</p></li>
+<li><p>Ensure the Gate pin is receiving adequate voltage when the sensor is covered.</p></li>
+<li><p>Adjust the resistor/potentiometer value of the voltage divider</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="what-s-next-extending-the-lesson">
+<h2>What’s Next? (Extending the Lesson)<a class="headerlink" href="#what-s-next-extending-the-lesson" title="Link to this heading">#</a></h2>
+<p>Street lamps in real neighborhoods work on this exact same sensing principle, but the real-world execution is slightly different:</p>
+<ul class="simple">
+<li><p><strong>Relays vs. Transistors:</strong> In an actual municipal street-lamp operating on high-voltage AC mains (<span class="math notranslate nohighlight">\(120\text{V}\)</span> or <span class="math notranslate nohighlight">\(240\text{V}\)</span>), you wouldn’t use a small breadboard transistor. Instead, you would likely use an electromechanical or solid-state <strong>relay</strong>.</p>
+<ul>
+<li><p><em>Discussion Question for Students:</em> What are the advantages and trade-offs of using a mechanical relay versus a semiconductor transistor when controlling high-power devices?</p></li>
+</ul>
+</li>
+<li><p><strong>Adding Hysteresis:</strong> Have students notice if their light flickers right around the transition point at dusk. In engineering, we use feedback circuits (like Schmitt triggers or op-amps) to add <em>hysteresis</em>, preventing flickering when the light is right on the edge of the threshold.</p></li>
+</ul>
+<p>You can pick up all of these inexpensive components at your favorite online electronics shop—or come visit us at <strong>Purdue University’s Elmore Family School of Electrical and Computer Engineering</strong>, where we can show you everything you need to know to build systems like this and so much more!</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./workshops"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../workshops.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Workshops Development</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="halloween.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Halloween Animatronics Workshop</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructor-overview-classroom-notes">Instructor Overview &amp; Classroom Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials-tools">Materials &amp; Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electronics-per-student-or-pair">Electronics (Per Student or Pair)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works-breaking-down-the-sub-circuits">How It Works: Breaking Down the Sub-Circuits</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-circuit-1-the-p-channel-mosfet-switch">Sub-Circuit 1: The P-Channel MOSFET Switch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-circuit-2-the-photoresistor-voltage-divider">Sub-Circuit 2: The Photoresistor Voltage Divider</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-the-sub-circuits">Combining the Sub-Circuits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#breadboard-assembly-guide">Breadboard Assembly Guide</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-set-up-power-rails">Step 1: Set Up Power Rails</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-build-sub-circuit-1-the-mosfet-switch-one-side-of-the-bridge">Step 2: Build Sub-Circuit 1 — The MOSFET Switch (One Side of the Bridge)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-build-sub-circuit-2-the-voltage-divider-sensor-across-the-bridge">Step 3: Build Sub-Circuit 2 — The Voltage Divider Sensor (Across the Bridge)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-link-the-sub-circuits-across-the-bridge">Step 4: Link the Sub-Circuits Across the Bridge</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-power-on-and-test">Step 5: Power On and Test</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classroom-troubleshooting-tips">Classroom Troubleshooting Tips</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-next-extending-the-lesson">What’s Next? (Extending the Lesson)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Ben Manning
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
