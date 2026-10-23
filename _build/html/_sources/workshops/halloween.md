@@ -18,7 +18,7 @@ The main goal of this workshop is to show students that you don't need crazy equ
 
 The end product of this workshop is a small animatronic diorama of a haunted house, grave, creepy tree, or whatever spooky setting you decide to build. A ghost, spider, bat, or other creepy figure pops out when someone or something moves past and casts a shadow over it.
 
-<video src="../_static/assets/videos/halloween1.mp4" height="240" alt = "A ghost popping out from behind a house" controls></video>
+<video src="../_static/assets/videos/halloween1.mp4" height="350" alt = "A ghost popping out from behind a house" controls></video>
 
 ---
 
@@ -53,15 +53,15 @@ Ideally, this project can be completed for less than 10 USD per student station.
 
 Making the diorama will vary depending on what type of box you have and how large you choose to make it. I had a small clothing box with a detachable lid. I decided to just use the lid, folding half of it up to create both a floor and a front facade that I could cut into whatever shape I liked.
 
-<img src="../_static/assets/images/box1.jpg" height="240" alt="box top for diorama">
+<img src="../_static/assets/images/box1.jpg" height="300" alt="box top for diorama">
 
 I made a cut along the sides of the lid to allow for simpler folding, folded it up to a right angle, and taped it in place.
 
-<img src="../_static/assets/images/box2.jpg" height="240" alt="box top for diorama">
+<img src="../_static/assets/images/box2.jpg" height="300" alt="box top for diorama">
 
 After folding, I cut my box into the 2D profile of a haunted house, added some drawings, and called it good for the sake of demonstration. Feel free to get as creative and spooky as you want with this!
 
-<img src="../_static/assets/images/boxFin.jpg" height="240" alt="finished Box Diorama">
+<img src="../_static/assets/images/boxFin.jpg" height="300" alt="finished Box Diorama">
 
 ### 2. Making the Figure
 
@@ -71,7 +71,7 @@ The key requirement is to keep it fairly lightweight so the motor can move it qu
 
 For my ghost, I balled up a couple of tissues into a small sphere, then draped another tissue over the ball to make it look like a flowing sheet. I used a spare zip tie to loosely secure the tissue around the neck, and drew a face on it with a marker.
 
-<img src="../_static/assets/images/ghost.jpg" height="240" alt="A tissue ghost">
+<img src="../_static/assets/images/ghost.jpg" height="300" alt="A tissue ghost">
 
 ---
 
@@ -83,14 +83,8 @@ The electrical side of this project has two main systems that need to talk to ea
 
 This is all handled by the Arduino, which reads the analog data from the photoresistor circuit and sends a control signal to the servo to jump into action when the light drops.
 
-```
+<img src="../_static/assets/images/halloweenFlow.png" height="500" alt="A Flowchart of the photoresistor-servo relationship">
 
-[ Ambient Light ] ---> [ Photoresistor + 10kΩ Divider ] ---> [ Arduino Analog Pin A0 ]
-                                                                      │
-                                                               (Decision Logic)
-                                                                      │
-[ Pop-Up Figure ] <--- [ Micro Servo ] <-------------------- [ Arduino Digital Pin D2 ]
-```
 
 ### The Photoresistor Circuit
 
@@ -109,7 +103,7 @@ $$V_{\text{out}} = 5\text{V} \times \frac{R_{\text{fixed}}}{R_{\text{photo}} + R
 * **When it is bright:** The photoresistor's resistance drops very low. Because the fixed $10\text{ k}\Omega$ resistor now represents most of the total resistance, most of the $5\text{V}$ appears across it, and `A0` reads a high voltage.
 * **When a shadow falls on the sensor:** The photoresistor's resistance shoots up. It now takes almost all of the voltage for itself, leaving very little for the $10\text{ k}\Omega$ resistor at the bottom. The voltage measured at `A0` drops close to $0\text{V}$.
 
-<img src="../_static/assets/images/photoVD.png" height="240" alt="Voltage divider schematic">
+<img src="../_static/assets/images/photoVD.png" height="300" alt="Voltage divider schematic">
 
 ### The Servo Motor
 
@@ -264,7 +258,7 @@ Once these connections are made and your code is uploaded, test it out by passin
 
 Here is what my completed diorama looks like from the back with everything wired together:
 
-<img src="../_static/assets/images/box3.jpeg" height="240" alt="finished wired diorama">
+<img src="../_static/assets/images/box3.jpeg" height="300" alt="finished wired diorama">
 
 ---
 

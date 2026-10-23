@@ -38,6 +38,8 @@ chapters:
 - file: workshops
   title: "Workshop Development"
   sections:
+    - file: workshops/lightswitch
+      title: "Automatic Lightswitch"
     - file: workshops/halloween
       title: "Halloween Animatronics"
 
