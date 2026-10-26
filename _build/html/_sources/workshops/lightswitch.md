@@ -12,7 +12,7 @@ As electrical and computer engineers, we have all kinds of tools at our disposal
 
 In this workshop, we use a **photoresistor** (a sensor that changes its electrical resistance depending on how bright it is) paired with a **transistor** (an electronic switch). When the light level drops, our circuit detects the change and automatically turns a light on.
 
-This project is a fantastic, hands-on way to introduce high schoolers and first-year engineering students to fundamental ECE concepts: reading circuit schematics, understanding voltage dividers, using transistors as solid-state switches, and translating paper diagrams onto a real breadboard.
+This project is a quick, hands-on way to introduce high schoolers and first-year engineering students to fundamental ECE concepts: reading circuit schematics, understanding voltage dividers, using transistors as solid-state switches, and translating paper diagrams onto a real breadboard.
 
 ---
 

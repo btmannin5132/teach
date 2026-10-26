@@ -25,3 +25,6 @@ A literature review was performed as an independent study to explore how reverse
 This course was the subject of a seminar at Purdue University in Engineering Education in January 2025.
 
 [Seminar Slides](https://purdue0-my.sharepoint.com/:p:/g/personal/btmannin_purdue_edu/EaTlguLjFD5JucMvBvq9TeYBgnfazyV8hA09alACHi69Yg?e=hj0lqy)
+
+This course was the subject of a work-in-progress conference paper for Frontiers in Engineering in November 2025.   https://ieeexplore.ieee.org/abstract/document/11328350
+Let me know if you would like a copy of the article.

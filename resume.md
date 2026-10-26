@@ -32,6 +32,7 @@ Certificate Credential ID: [VE8FAX5RFCQ2](https://www.coursera.org/account/accom
 Purdue University COE: West Lafayette, IN
   * Instruct students in Engineering fundamentals as part of a team.
   * Mentor Purdue student EPICS teams on various community-centered projects.
+  * Teach Electrical and Computer Engineering classes on off-semesters when First-Year classes are not in session.
 
 **Senior Instructional Lab Coordinator, Associate Director of Undergraduate Labs- Curriculum** | 2021-2024\
 Purdue University ECE: West Lafayette, IN
