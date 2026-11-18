@@ -6,8 +6,11 @@ root: index
 title: Welcome
 
 chapters:
-- file: resume
-  title: "Resume"
+- title: Home
+  url: https://btmannin5132.github.io/
+
+- title: Resume
+  url: https://btmannin5132.github.io/resume.html
 
 - file: phd
   sections:
