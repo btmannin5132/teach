@@ -125,7 +125,7 @@ Add **0.5 mm fillets** to the **inside vertical edges of the opening**. Rounded 
 
 <img src="../_static/assets/images/cadworkshop/organ-clip-fil.png" alt="Fillet the clip edges" height="300">
 
-> Instead of adding the fillet on the 3D part, you could have used curves or the sketch fillet options inside the sketch.  I personally prefer to keep the sketches as simple as possible, and this way I can quickly adjust fillet and other dimensions without having to worry about it screwing up my sketch.
+> **Design note:** Instead of adding the fillet on the 3D part, you could have used curves or the sketch fillet options inside the sketch.  I personally prefer to keep the sketches as simple as possible, and this way I can quickly adjust fillet and other dimensions without having to worry about it screwing up my sketch.
 
 ### 6. Chamfering Under the Holder
 
