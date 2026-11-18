@@ -276,7 +276,7 @@ To sketch a teardrop:
 The tip of a $45^\circ$ teardrop sticks up above the circle by about $0.41 \times r$ (where $r$ is the radius of the hole). On small holes, that tip is tiny and usually sags slightly anyway, so the hole still looks round. On big holes, the tip becomes obvious.
 
 | Hole Diameter | Tip Height Above Circle | What to Do |
-|:---|:---|:---|
+|:------|:-----|:-----|
 | Up to ~3 mm | ~0.6 mm or less | A plain circle is usually fine. The sag is barely noticeable |
 | ~3 to 8 mm | ~0.6 to 1.7 mm | Use a full teardrop. It still reads as a round hole |
 | Over ~8 mm | More than ~1.7 mm | Use a **flat-topped teardrop**. Cut the tip off with a horizontal line |
