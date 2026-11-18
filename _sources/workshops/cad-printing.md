@@ -184,7 +184,7 @@ I made my text box **20 mm tall**, which leaves **10 mm above and below** it on 
 
 #### 3D Printing Note: Text Depth and Fonts
 
-**Debossed** (cut-in) text on a vertical wall is one of the easiest ways to personalize a print, and it needs no supports. But to make it look good, here are a few things to keep in mind:
+**Debossed** (cut-in) text on a vertical wall is one of the simplest ways to personalize a print, and it needs no supports. But to make it look good, here are a few things to keep in mind:
 
 * **Stick around 0.8 mm deep.** That's two nozzle widths, which is plenty to read clearly. Our wall is only 2 mm thick, so a deeper cut leaves a thin wall behind the letters. The top edge of each letter is also a tiny overhang, and the deeper you cut, the more that edge sags. Once you've got the basics down, feel free to experiment with depth for your particular font.
 * **Not every font will work.** Some of the fonts in Onshape, especially script, thin, or  decorative ones, have overlapping geometry that won't extrude. If your text feature turns red or letters go missing, that text can't become part of your print. Swap to a different font before you move on.
@@ -204,7 +204,7 @@ Add **4 mm fillets** to the **vertical edges** of the box, both **inside and out
 
 ### 11. Chamfering the Bottom
 
-Add a **0.6 mm chamfer** to the **bottom edges** of the box. The easiest way is to select the **bottom face** itself, which grabs every edge around it, including the curved fillet edges.
+Add a **0.6 mm chamfer** to the **bottom edges** of the box. The fastest way is to select the **bottom face** itself, which grabs every edge around it, including the curved fillet edges.
 
 <img src="../_static/assets/images/cadworkshop/organ-end-cham.png" height="300" alt="Small chamfer on the bottom edge of the organizer">
 
@@ -284,5 +284,3 @@ The tip of a $45^\circ$ teardrop sticks up above the circle by about $0.41 \time
 For bigger holes, a flat-topped teardrop keeps the hole looking round. The short flat section at the top is a small **bridge**, where the printer stretches plastic across a gap between two supported points. Short bridges like this print just fine.
 
 These are starting points. Your printer, material, and cooling will shift the numbers a bit, so it's worth printing a test block with a few sizes to see how your printer does.
-
----

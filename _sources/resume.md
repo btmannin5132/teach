@@ -178,5 +178,3 @@ Team 5132 (FRC) and Team 18597 (FTC)
 
 **Boy Scouts of America** | Outdoor Skills Director at Bear Paw Scout Camp: 2012-2014
 Troop 1043, Crew 9001, Crew 9443: bsa.org
-
------
