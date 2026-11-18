@@ -24,3 +24,6 @@ push-readme:
 	# git add readme.md _toc.yml
 	# git commit -m "Update README and ToC"
 	# git push
+
+test:
+	python3 -m http.server --directory _build/html

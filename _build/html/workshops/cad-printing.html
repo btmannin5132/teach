@@ -1,0 +1,921 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Onshape for 3D Printing Workshop &#8212; Ben Manning&#39;s Teaching Portfolio</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'workshops/cad-printing';</script>
+    <link rel="icon" href="../_static/favicon1.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="COVID-19 Work" href="../covid.html" />
+    <link rel="prev" title="Halloween Animatronics Workshop" href="halloween.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo1.png" class="logo__image only-light" alt="Ben Manning's Teaching Portfolio - Home"/>
+    <script>document.write(`<img src="../_static/logo1.png" class="logo__image only-dark" alt="Ben Manning's Teaching Portfolio - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resume.html">Resume</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../phd.html">PhD in Engineering Education</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../phd/application-documents.html">Application Documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../phd/graduate-competencies.html">Graduate Competencies</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../masters.html">Master of Arts in Teaching</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../masters/eqs.html">Essential Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../masters/intern.html">Intern Keys</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../policy.html">Educational Policy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../policies/tinkering-felony.html">The felony of Tinkering</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../courses.html">Course Development</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../courses/ece20007.html">ECE20007- Electronics Fundamentals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../courses/reverse-engineering.html">Reverse Engineering</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects.html">Personal Projects</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../workshops.html">Workshop Development</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="lightswitch.html">Automatic Lightswitch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="halloween.html">Halloween Animatronics</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">CAD for 3D Printing</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../covid.html">COVID-19 Work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Contact Ben Manning</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/btmannin5132/teach" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/btmannin5132/teach/issues/new?title=Issue%20on%20page%20%2Fworkshops/cad-printing.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/workshops/cad-printing.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Onshape for 3D Printing Workshop</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-product">End Product</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials-classroom-budget">Materials &amp; Classroom Budget</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-tools">General Tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consumables">Consumables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-box">Building the Box</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sketching-the-base">1. Sketching the Base</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shelling-the-box">2. Shelling the Box</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-printing-note-wall-thickness-and-nozzle-math">3D Printing Note: Wall Thickness and Nozzle Math</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-cable-holders">Building the Cable Holders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sketching-the-cable-holder">3. Sketching the Cable Holder</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-the-holder">4. Extruding the Holder</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-printing-note-why-the-cable-runs-vertically">3D Printing Note: Why the Cable Runs Vertically</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filleting-the-opening">5. Filleting the Opening</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chamfering-under-the-holder">6. Chamfering Under the Holder</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-printing-note-the-45-rule">3D Printing Note: The 45° Rule</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#patterning-the-holders">7. Patterning the Holders</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#personalizing-the-box">Personalizing the Box</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-text">8. Adding Text</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-the-text">9. Extruding the Text</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-printing-note-text-depth-and-fonts">3D Printing Note: Text Depth and Fonts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finishing-touches">Finishing Touches</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rounding-the-corners">10. Rounding the Corners</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chamfering-the-bottom">11. Chamfering the Bottom</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-printing-note-elephant-s-foot">3D Printing Note: Elephant’s Foot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-and-slicing">Exporting and Slicing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#great-job">Great Job!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-printing-holes">Bonus: Printing Holes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vertical-holes">Vertical Holes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-holes-and-the-teardrop-fix">Horizontal Holes and the Teardrop Fix</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-big-can-a-teardrop-get-before-it-looks-like-a-teardrop">How Big Can a Teardrop Get Before It Looks Like a Teardrop?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="onshape-for-3d-printing-workshop">
+<h1>Onshape for 3D Printing Workshop<a class="headerlink" href="#onshape-for-3d-printing-workshop" title="Link to this heading">#</a></h1>
+<p>This workshop introduces engineering students to CAD fundamentals in <a class="reference external" href="https://www.onshape.com/">Onshape</a>, with every step tied back to one question: <em>will this actually print well?</em> It is structured like an Instructables guide, but written with educators in mind so you can efficiently run this in your classroom, lab, or makerspace in under two hours.</p>
+<p>A lot of first CAD projects look great on screen and then turn into a stringy, droopy mess on the printer. That usually isn’t the printer’s fault. It’s the design. The main goal of this workshop is to show students that a handful of simple habits (smart wall thicknesses, the <span class="math notranslate nohighlight">\(45^\circ\)</span> rule, chamfers in the right places, and knowing which way holes should run) make the difference between a print that fails and one that comes off the bed looking clean with no supports at all.</p>
+<p>We’ll be using Onshape because it runs entirely in a web browser, works on Chromebooks and school laptops, or basically any potato with internet access.  Onshape is also free for students and educators. This means you don’t have to worry about licenses, expensive engineering computers, or tricky installs.</p>
+<hr class="docutils" />
+<section id="end-product">
+<h2>End Product<a class="headerlink" href="#end-product" title="Link to this heading">#</a></h2>
+<p>The end product of this workshop is a small desk organizer with personalized debossed text on the front and cable holders on the back that keep your charging cables from sliding off the desk. Every feature on it was chosen so that the whole part prints with <strong>zero support material</strong>, which means no wasted fillament.  The print should be able to be completed in about an hour on most modern 3D printers.</p>
+<img src="../_static/assets/images/cadworkshop/organ-final.png" alt="Final render of desktop organizer" height="300">
+</section>
+<hr class="docutils" />
+<section id="materials-classroom-budget">
+<h2>Materials &amp; Classroom Budget<a class="headerlink" href="#materials-classroom-budget" title="Link to this heading">#</a></h2>
+<p>The only real cost here is filament. The organizer uses between 35-40g of PLA, which is well under a dollar per student at typical filament prices.  You should be able to print about 25 of these organizers on a single roll of fillament.</p>
+<section id="general-tools">
+<h3>General Tools<a class="headerlink" href="#general-tools" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Computer with a modern web browser and internet access</p></li>
+<li><p>A free <a class="reference external" href="https://www.onshape.com/en/education/">Onshape Education account</a> (have students sign up <em>before</em> the workshop, since email verification can eat the first 15 minutes)</p></li>
+<li><p>A 3-button mouse with a scroll wheel (navigating 3D space on a trackpad is painful for beginners)</p></li>
+<li><p>Slicing software for your printer (Cura, PrusaSlicer, etc.)</p>
+<ul>
+<li><p>If you want to support makers like me, do not use Bambu Studio or software from other companies that are trying to take the control away from makers.  There is a big rabbit hole to go down here, but we should fight to keep printers, slicers, and the files created open and accessible, and the products we makers make should stay our own intellectual property.</p></li>
+</ul>
+</li>
+<li><p>An FDM 3D printer with a standard 0.4 mm nozzle</p></li>
+</ul>
+</section>
+<section id="consumables">
+<h3>Consumables<a class="headerlink" href="#consumables" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>PLA filament (about 40 g per organizer)</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="building-the-box">
+<h2>Building the Box<a class="headerlink" href="#building-the-box" title="Link to this heading">#</a></h2>
+<section id="sketching-the-base">
+<h3>1. Sketching the Base<a class="headerlink" href="#sketching-the-base" title="Link to this heading">#</a></h3>
+<p>Before starting, hide all of the default planes except the <strong>Top plane</strong>. It keeps the screen clean and makes it much harder to accidentally sketch on the wrong plane.</p>
+<img src="../_static/assets/images/cadworkshop/organ1.2-hide.png" alt="Hide the unneeded planes" height="300">
+<p>Create a sketch on the <strong>Top plane</strong></p>
+<img src="../_static/assets/images/cadworkshop/organ1.png" alt="Start a sketch" height="300">
+<p>and draw a <strong>Center Point Rectangle</strong> starting on the origin.</p>
+<img src="../_static/assets/images/cadworkshop/organ2-bot.png" alt="Make a centerpoint rectangle" height="300">
+<p>Dimension it <strong>80 mm x 60 mm</strong>. Your lines should turn black, meaning the sketch is fully constrained.</p>
+<img src="../_static/assets/images/cadworkshop/organ2-size.png" alt="Size the box to 80x60mm" height="300">
+<p><strong>Extrude</strong> the sketch <strong>40 mm</strong>.</p>
+<img src="../_static/assets/images/cadworkshop/organ-ext.png" alt="Extrude the box to 40mm" height="300">
+<blockquote>
+<div><p><strong>Print Tip:</strong> Locking the rectangle to the origin is a CAD habit, not a printing requirement. Your slicer will re-center the part on the build plate no matter where it sits in Onshape. What the origin <em>does</em> do is keep your sketch fully constrained, so if you change 80 mm to 100 mm later, the box grows evenly instead of drifting off in one direction.</p>
+</div></blockquote>
+<p>Sketching on the Top plane also means the bottom of your box is the face that will sit on the build plate. Keep that in mind, because almost every decision from here on depends on knowing which way is “up” for the printer.</p>
+<p>Feel free to now hide the top plane as well, we won’t be needing it anymore.</p>
+</section>
+<section id="shelling-the-box">
+<h3>2. Shelling the Box<a class="headerlink" href="#shelling-the-box" title="Link to this heading">#</a></h3>
+<p>Use the <strong>Shell</strong> tool and select the <strong>top face</strong> of the box. Set the thickness to <strong>2 mm</strong>. This hollows out the box and leaves 2 mm walls and a 2 mm floor.</p>
+<img src="../_static/assets/images/cadworkshop/organ-hole.png" alt="hollow out the box" height="300">
+<section id="d-printing-note-wall-thickness-and-nozzle-math">
+<h4>3D Printing Note: Wall Thickness and Nozzle Math<a class="headerlink" href="#d-printing-note-wall-thickness-and-nozzle-math" title="Link to this heading">#</a></h4>
+<p>Most printers use a <strong>0.4 mm nozzle</strong>, and the slicer builds walls out of side-by-side lines of plastic (called perimeters) that are each about one nozzle-width wide. When your wall thickness is a clean multiple of the nozzle width, the slicer can fill it with complete perimeters:</p>
+<ul class="simple">
+<li><p><strong>0.8 mm</strong> = 2 perimeters (the absolute minimum for anything you want to survive)</p></li>
+<li><p><strong>1.6 mm</strong> = 4 perimeters (stiff, but still a little flexible)</p></li>
+<li><p><strong>2.0 mm</strong> = 5 perimeters (recommended for most generall walls)</p></li>
+</ul>
+<p>If you pick something awkward like 1.0 mm, the slicer has to squeeze in a skinny gap-fill line between perimeters, which prints slower and is weaker. Most slicers can handle this pretty well with modern techniques, but we might as well keep the geometry simple if we can.  Our 2 mm walls come out as solid plastic all the way through, so infill settings barely matter for this part.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="building-the-cable-holders">
+<h2>Building the Cable Holders<a class="headerlink" href="#building-the-cable-holders" title="Link to this heading">#</a></h2>
+<section id="sketching-the-cable-holder">
+<h3>3. Sketching the Cable Holder<a class="headerlink" href="#sketching-the-cable-holder" title="Link to this heading">#</a></h3>
+<p>Create a new sketch on the <strong>top face</strong> of the hollowed box (the rim). The cable holders go on the <strong>back wall</strong>, the outside face of one of the long sides.</p>
+<ol class="arabic simple">
+<li><p>Draw <strong>two concentric circles</strong>. The <strong>inner circle</strong> has a <strong>5 mm diameter</strong>. The <strong>outer circle</strong> is <strong>1.6 mm</strong> away from the inner circle all the way around.</p></li>
+<li><p>Make the outer circle <strong>tangent to the outside edge of the back wall</strong>, and center the circles along the length of the box.</p></li>
+<li><p>Draw <strong>two arcs</strong>, one on either side of the circle. Each arc should be <strong>tangent to both the outer circle and the outside wall</strong> of the box. These blend the holder smoothly into the wall.</p></li>
+<li><p>Constrain the top point of each arc (where it meets the circle) to be <strong>horizontal with the center point of the circles</strong>.</p></li>
+<li><p>Draw a <strong>box</strong> on the far side of the circles, away from the wall, with a <strong>width of 3 mm</strong> and any height you like, <strong>vertically aligned with the center</strong> of the circles. This is the opening the cable snaps through.</p></li>
+</ol>
+<img src="../_static/assets/images/cadworkshop/organ-clip.png" height="300" alt="Cable holder sketch with concentric circles, tangent arcs, and opening">
+<blockquote>
+<div><p><strong>Print Tip:</strong> That 1.6 mm ring is four perimeters thick. It’s stiff enough to hold a cable, but thin enough to flex a little as the cable snaps through the 3 mm opening. Thicker than about 2.4 mm and it won’t flex. Thinner than about 1.2 mm and it gets brittle.</p>
+</div></blockquote>
+</section>
+<section id="extruding-the-holder">
+<h3>4. Extruding the Holder<a class="headerlink" href="#extruding-the-holder" title="Link to this heading">#</a></h3>
+<p><strong>Extrude</strong> the regions made by the <strong>arcs and the outer circle</strong> <strong>5 mm</strong>. Leave the <strong>inner circle</strong> and the <strong>3 mm box</strong> unselected so the cable pocket and opening stay open. I extruded down into the part so the top of the holder stays flush with the rim.</p>
+<img src="../_static/assets/images/cadworkshop/organ-clip-ex.png" alt="Extrusion settings for cable clip" height="300">
+<section id="d-printing-note-why-the-cable-runs-vertically">
+<h4>3D Printing Note: Why the Cable Runs Vertically<a class="headerlink" href="#d-printing-note-why-the-cable-runs-vertically" title="Link to this heading">#</a></h4>
+<p>Since we sketched the holder on the top face and extruded it straight down, every single layer of the holder is the exact same C shape. The pocket prints as a perfect circle with no droop, because nothing is hanging in mid-air <em>inside</em> the clip.</p>
+<p>It’s also stronger this way. A 3D print is a lot like wood grain: it’s strong along the layers and weak between them. When a cable pushes the clip open, that force runs sideways <em>along</em> the layer lines instead of trying to peel the layers apart.</p>
+</section>
+</section>
+<section id="filleting-the-opening">
+<h3>5. Filleting the Opening<a class="headerlink" href="#filleting-the-opening" title="Link to this heading">#</a></h3>
+<p>Add <strong>0.5 mm fillets</strong> to the <strong>inside vertical edges of the opening</strong>. Rounded lips guide the cable into the clip instead of snagging or scraping it.</p>
+<img src="../_static/assets/images/cadworkshop/organ-clip-fil.png" alt="Fillet the clip edges" height="300">
+<blockquote>
+<div><p>Instead of adding the fillet on the 3D part, you could have used curves or the sketch fillet options inside the sketch.  I personally prefer to keep the sketches as simple as possible, and this way I can quickly adjust fillet and other dimensions without having to worry about it screwing up my sketch.</p>
+</div></blockquote>
+</section>
+<section id="chamfering-under-the-holder">
+<h3>6. Chamfering Under the Holder<a class="headerlink" href="#chamfering-under-the-holder" title="Link to this heading">#</a></h3>
+<p>There’s a catch with our cable holder: it sticks out from the back wall, and it starts 35 mm up in the air. Nothing is underneath it. If we printed it like this, the printer would be laying plastic down on top of nothing.  This means that the first few layers will be a little stringy, and it is also possible that some of the loose filament will catch the nozzle, causing a larger error than just droopy holders.</p>
+<p>Add a <strong>chamfer</strong> to the <strong>bottom edge where the cable holder meets the back wall</strong>, with a distance of <strong>8 mm</strong>. Because this edge is an inside corner, Onshape <em>adds</em> material, which creates a <span class="math notranslate nohighlight">\(45^\circ\)</span> support wedge under the holder.</p>
+<img src="../_static/assets/images/cadworkshop/organ-guss.png" height="300" alt="45 degree chamfer supporting the underside of the cable holder">
+<p>The distance that lines up flush with the end of the holder works out to around 7.5 mm. I used <strong>8 mm</strong> because it keeps the numbers nice, and it adds a little extra thickness to the holder.</p>
+<section id="d-printing-note-the-45-rule">
+<h4>3D Printing Note: The 45° Rule<a class="headerlink" href="#d-printing-note-the-45-rule" title="Link to this heading">#</a></h4>
+<p>This is the single most important rule in designing for 3D printing, especially if you want to avoid supports.</p>
+<p>A printer builds a part one layer at a time, and every new layer needs something underneath it to sit on. When a wall leans outward (an <strong>overhang</strong>), each layer sticks out a little past the one below it. The question is how far it can stick out before it droops.</p>
+<p>With a typical <strong>0.2 mm layer height</strong> and a <strong>0.4 mm wide</strong> line of plastic, a <span class="math notranslate nohighlight">\(45^\circ\)</span> slope shifts each layer outward by exactly <strong>0.2 mm</strong>, which is the same as the layer height. That means each new line is still sitting on about <strong>half of the line below it</strong>. That’s enough for the plastic to stay put as it cools.</p>
+<ul class="simple">
+<li><p><strong>Steeper than <span class="math notranslate nohighlight">\(45^\circ\)</span> from vertical</strong> (closer to a straight wall): prints cleanly with no supports</p></li>
+<li><p><strong>Right around <span class="math notranslate nohighlight">\(45^\circ\)</span></strong>: the practical limit for most printers and materials</p></li>
+<li><p><strong>Shallower than <span class="math notranslate nohighlight">\(45^\circ\)</span></strong> (closer to flat): each layer is mostly hanging in the air, and you get droop, rough surfaces, and a need for support material</p></li>
+</ul>
+<p>This is also why we used a <strong>chamfer</strong> here and not a <strong>fillet</strong>. A fillet is a curve, and the bottom of that curve starts out nearly <strong>flat</strong> (<span class="math notranslate nohighlight">\(0^\circ\)</span>). That’s the worst possible overhang, right at the start of the feature. A chamfer keeps a constant <span class="math notranslate nohighlight">\(45^\circ\)</span> the whole way.</p>
+</section>
+</section>
+<section id="patterning-the-holders">
+<h3>7. Patterning the Holders<a class="headerlink" href="#patterning-the-holders" title="Link to this heading">#</a></h3>
+<p>Now let’s add more holders without redrawing anything. Use <strong>Linear Pattern</strong> and set the pattern type to <strong>Feature</strong>.</p>
+<ol class="arabic simple">
+<li><p>Select the <strong>extrude, the fillets, and the chamfer</strong> from the feature list.</p></li>
+<li><p>For the direction, select the <strong>Right plane</strong>. Either side face of the part works too.</p></li>
+<li><p>Set the distance to <strong>25 mm</strong> and <strong>2 instances</strong>.  Feel free to increase or decrease the distance between the features as well.  If you decrease the distance to 13mm, you can fit 5 holders on the back, but it might look a little cramped.  Feel free to add a few more fillets in the inside edges between the holders to clean up the appearance</p></li>
+<li><p>Check <strong>Centered</strong> to get one instance on either side of center.</p></li>
+<li><p>Check <strong>Reapply features</strong>.  This one is important. It tells Onshape to rebuild each feature in its new spot. Without it, Onshape tries to duplicate the entire face of the box, which usually fails or gives you some very strange geometry.</p></li>
+</ol>
+<img src="../_static/assets/images/cadworkshop/organ-lin.png" height="300" alt="Linear pattern of cable holders on back wall">
+</section>
+</section>
+<hr class="docutils" />
+<section id="personalizing-the-box">
+<h2>Personalizing the Box<a class="headerlink" href="#personalizing-the-box" title="Link to this heading">#</a></h2>
+<section id="adding-text">
+<h3>8. Adding Text<a class="headerlink" href="#adding-text" title="Link to this heading">#</a></h3>
+<p>Create a sketch on the <strong>front face</strong> of the box (opposite the cable holders) and use the <strong>Text</strong> tool to write whatever you like. Mine says “BEN”.</p>
+<p>I made my text box <strong>20 mm tall</strong>, which leaves <strong>10 mm above and below</strong> it on the 40 mm wall. I also <strong>vertically aligned</strong> the text box with the origin so it sits in the middle of the wall. Depending on how many characters you use, you may need to adjust the height. Longer names may need multiple text boxes to center properly.</p>
+<img src="../_static/assets/images/cadworkshop/organ-name.png" height="300" alt="Adding text to the front face of the box">
+</section>
+<section id="extruding-the-text">
+<h3>9. Extruding the Text<a class="headerlink" href="#extruding-the-text" title="Link to this heading">#</a></h3>
+<p><strong>Extrude</strong> the text <strong>inward 0.8 mm</strong> as a <strong>Remove</strong>.</p>
+<img src="../_static/assets/images/cadworkshop/organ-name-emb.png" height="300" alt="Debossed text on the front of the organizer">
+<section id="d-printing-note-text-depth-and-fonts">
+<h4>3D Printing Note: Text Depth and Fonts<a class="headerlink" href="#d-printing-note-text-depth-and-fonts" title="Link to this heading">#</a></h4>
+<p><strong>Debossed</strong> (cut-in) text on a vertical wall is one of the easiest ways to personalize a print, and it needs no supports. But to make it look good, here are a few things to keep in mind:</p>
+<ul class="simple">
+<li><p><strong>Stick around 0.8 mm deep.</strong> That’s two nozzle widths, which is plenty to read clearly. Our wall is only 2 mm thick, so a deeper cut leaves a thin wall behind the letters. The top edge of each letter is also a tiny overhang, and the deeper you cut, the more that edge sags. Once you’ve got the basics down, feel free to experiment with depth for your particular font.</p></li>
+<li><p><strong>Not every font will work.</strong> Some of the fonts in Onshape, especially script, thin, or  decorative ones, have overlapping geometry that won’t extrude. If your text feature turns red or letters go missing, that text can’t become part of your print. Swap to a different font before you move on.</p></li>
+<li><p><strong>Bold sans-serif fonts are your friend.</strong> Any stroke thinner than the 0.4 mm nozzle simply won’t print.  This is something to check for in your slicer when you are preparing your print file.  The print preview will show you if the text will actually come through or not.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="finishing-touches">
+<h2>Finishing Touches<a class="headerlink" href="#finishing-touches" title="Link to this heading">#</a></h2>
+<section id="rounding-the-corners">
+<h3>10. Rounding the Corners<a class="headerlink" href="#rounding-the-corners" title="Link to this heading">#</a></h3>
+<p>Add <strong>4 mm fillets</strong> to the <strong>vertical edges</strong> of the box, both <strong>inside and outside</strong>.</p>
+<img src="../_static/assets/images/cadworkshop/organ-end-fill.png" height="300" alt="Vertical Fillets on the sides of the box">
+<blockquote>
+<div><p><strong>Print Tip:</strong> Vertical fillets are great for printing. They’re printed in the flat X/Y plane, so there’s no overhang at all. Rounded corners also let the print head glide around the corner instead of slamming to a stop and changing direction, and they reduce the stress that builds up as plastic cools. Sharp corners are where warping and lifting off the bed usually start.</p>
+</div></blockquote>
+</section>
+<section id="chamfering-the-bottom">
+<h3>11. Chamfering the Bottom<a class="headerlink" href="#chamfering-the-bottom" title="Link to this heading">#</a></h3>
+<p>Add a <strong>0.6 mm chamfer</strong> to the <strong>bottom edges</strong> of the box. The easiest way is to select the <strong>bottom face</strong> itself, which grabs every edge around it, including the curved fillet edges.</p>
+<img src="../_static/assets/images/cadworkshop/organ-end-cham.png" height="300" alt="Small chamfer on the bottom edge of the organizer">
+<section id="d-printing-note-elephant-s-foot">
+<h4>3D Printing Note: Elephant’s Foot<a class="headerlink" href="#d-printing-note-elephant-s-foot" title="Link to this heading">#</a></h4>
+<p>The first few layers of a print are squished down onto a heated bed so they stick well. That squish pushes the plastic slightly outward and creates a small flared lip around the base of the part, known as <strong>elephant’s foot</strong>. It makes parts measure a little oversized at the bottom and can keep them from fitting against other parts.</p>
+<p>A small chamfer on the bottom edge gives that extra plastic somewhere to go, so the flare fills in the chamfer instead of sticking out past your wall.</p>
+<ul class="simple">
+<li><p><strong>0.6 mm</strong> is a great default.</p></li>
+<li><p><strong>You don’t need to go past 0.8 mm.</strong> Any bigger and you’ll end up with an odd-looking bevel around the base.</p></li>
+<li><p><strong>General rule:</strong> anything touching the build plate gets a <strong>chamfer</strong>, never a fillet. A fillet on a bottom edge is a <span class="math notranslate nohighlight">\(0^\circ\)</span> overhang right on the first layers, and it tends to curl. (try printing a sphere to really see this effect… it isn’t pretty.)</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="exporting-and-slicing">
+<h2>Exporting and Slicing<a class="headerlink" href="#exporting-and-slicing" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Right-click your part in the <strong>Parts list</strong> in the bottom left corner and choose <strong>Export</strong>.</p></li>
+<li><p>Select <strong>STL</strong> as the format, set the units to <strong>Millimeter</strong>, and set the resolution to <strong>Fine</strong>. Coarse resolution turns small curves like the cable pocket into visible flat facets.</p></li>
+<li><p>Open the file in your slicer. The box should be sitting <strong>open side up</strong>, flat on the build plate.</p></li>
+<li><p>Make sure <strong>supports are turned off</strong>, slice, and look through the <strong>layer preview</strong>.</p></li>
+</ol>
+<blockquote>
+<div><p><strong>Print Tip:</strong> Check the Parts list before you export. If you see Part 2, Part 3, or more, a feature was probably set to <strong>New</strong> instead of <strong>Add</strong>, and you’ll only export one piece of your organizer.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="great-job">
+<h2>Great Job!<a class="headerlink" href="#great-job" title="Link to this heading">#</a></h2>
+<p>That’s all there is to designing a clean, support-free print! Send this off to your printer, and you should be able to get a desktop organizer in about an hour if your printer is using Klipper.  If you have an older printer, such as an Ender 3, or an older Prusa model that is using Marlin, it will probably take closer to 2-3 hours.  Still not bad though!</p>
+<img src="../_static/assets/images/cadworkshop/organ-final.png" alt="Final render of desktop organizer" height="300">
+<p>The organizer is a simple part, but the same habits apply to nearly everything you’ll design for 3D printing: wall thicknesses in multiples of your nozzle, the <span class="math notranslate nohighlight">\(45^\circ\)</span> rule for overhangs, chamfers on anything touching the bed, and holes that run the right direction. From here, try adding dividers, a pen cup, or a phone slot. Every new feature is a chance to ask, “Which way is up for the printer?” Have fun designing!</p>
+</section>
+<section id="bonus-printing-holes">
+<h2>Bonus: Printing Holes<a class="headerlink" href="#bonus-printing-holes" title="Link to this heading">#</a></h2>
+<p>The organizer doesn’t need any holes, but holes come up in almost every real project, and the direction a hole runs completely changes how it prints. For this demonstration, I use a simple test block so we can compare holes side by side.</p>
+<section id="vertical-holes">
+<h3>Vertical Holes<a class="headerlink" href="#vertical-holes" title="Link to this heading">#</a></h3>
+<p>A hole that runs <strong>up and down</strong> (along the Z axis) is the easy case. Every layer is just a clean circle, so it prints round with no supports.</p>
+<p>To make one, sketch a circle on a top face and <strong>Extrude Remove</strong> through the part.</p>
+<blockquote>
+<div><p><strong>Print Tip:</strong> Printed holes almost always come out a little <strong>undersized</strong>, since the plastic squishes slightly inward. A hole designed at 3 mm often prints closer to 2.7 mm. Add <strong>0.2 to 0.4 mm</strong> to the diameter of any hole that needs to fit something, and print a small test piece first if the fit really matters.</p>
+</div></blockquote>
+</section>
+<section id="horizontal-holes-and-the-teardrop-fix">
+<h3>Horizontal Holes and the Teardrop Fix<a class="headerlink" href="#horizontal-holes-and-the-teardrop-fix" title="Link to this heading">#</a></h3>
+<p>A hole that runs <strong>sideways</strong> is a different story. Picture the printer building that circle from the bottom up. The bottom half is fine, since each layer is supported by the one below. But at the top of the circle, the roof of the hole becomes almost perfectly flat. That’s a <span class="math notranslate nohighlight">\(0^\circ\)</span> overhang, and it sags.</p>
+<p>The fix is the <strong>teardrop</strong>. Instead of a round roof, we bring the top of the hole to a point using two <span class="math notranslate nohighlight">\(45^\circ\)</span> lines. Now every part of the hole follows the <span class="math notranslate nohighlight">\(45^\circ\)</span> rule.</p>
+<p>To sketch a teardrop:</p>
+<ol class="arabic simple">
+<li><p>Sketch a circle on the side face where the hole should go.</p></li>
+<li><p>Draw a vertical construction line up from the center of the circle.</p></li>
+<li><p>Draw two lines, each <strong>tangent</strong> to the circle, that meet at a point on the construction line.</p></li>
+<li><p>Add a <strong><span class="math notranslate nohighlight">\(45^\circ\)</span> angle</strong> between each line and the construction line.  This means a total of <strong><span class="math notranslate nohighlight">\(90^\circ\)</span> angle</strong> between the two tangent lines</p></li>
+<li><p><strong>Trim</strong> the small arc at the top of the circle between the two lines.</p></li>
+<li><p><strong>Extrude Remove</strong> through the part.</p></li>
+</ol>
+<img src="../_static/assets/images/cadworkshop/hole-tear.png" height="300" alt="Teardrop hole sketch with 45 degree lines tangent to a circle">
+<blockquote>
+<div><p><strong>Print Tip:</strong> The point of the teardrop has to face <strong>up toward the top of the print</strong>, not just up on your screen. If you later rotate the part in the slicer, the teardrop needs to rotate with it.</p>
+</div></blockquote>
+<section id="how-big-can-a-teardrop-get-before-it-looks-like-a-teardrop">
+<h4>How Big Can a Teardrop Get Before It Looks Like a Teardrop?<a class="headerlink" href="#how-big-can-a-teardrop-get-before-it-looks-like-a-teardrop" title="Link to this heading">#</a></h4>
+<p>The tip of a <span class="math notranslate nohighlight">\(45^\circ\)</span> teardrop sticks up above the circle by about <span class="math notranslate nohighlight">\(0.41 \times r\)</span> (where <span class="math notranslate nohighlight">\(r\)</span> is the radius of the hole). On small holes, that tip is tiny and usually sags slightly anyway, so the hole still looks round. On big holes, the tip becomes obvious.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Hole Diameter</p></th>
+<th class="head text-left"><p>Tip Height Above Circle</p></th>
+<th class="head text-left"><p>What to Do</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Up to ~3 mm</p></td>
+<td class="text-left"><p>~0.6 mm or less</p></td>
+<td class="text-left"><p>A plain circle is usually fine. The sag is barely noticeable</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>~3 to 8 mm</p></td>
+<td class="text-left"><p>~0.6 to 1.7 mm</p></td>
+<td class="text-left"><p>Use a full teardrop. It still reads as a round hole</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Over ~8 mm</p></td>
+<td class="text-left"><p>More than ~1.7 mm</p></td>
+<td class="text-left"><p>Use a <strong>flat-topped teardrop</strong>. Cut the tip off with a horizontal line</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>For bigger holes, a flat-topped teardrop keeps the hole looking round. The short flat section at the top is a small <strong>bridge</strong>, where the printer stretches plastic across a gap between two supported points. Short bridges like this print just fine.</p>
+<p>These are starting points. Your printer, material, and cooling will shift the numbers a bit, so it’s worth printing a test block with a few sizes to see how your printer does.</p>
+<hr class="docutils" />
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./workshops"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="halloween.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Halloween Animatronics Workshop</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../covid.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">COVID-19 Work</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-product">End Product</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials-classroom-budget">Materials &amp; Classroom Budget</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-tools">General Tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consumables">Consumables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-box">Building the Box</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sketching-the-base">1. Sketching the Base</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shelling-the-box">2. Shelling the Box</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-printing-note-wall-thickness-and-nozzle-math">3D Printing Note: Wall Thickness and Nozzle Math</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-cable-holders">Building the Cable Holders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sketching-the-cable-holder">3. Sketching the Cable Holder</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-the-holder">4. Extruding the Holder</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-printing-note-why-the-cable-runs-vertically">3D Printing Note: Why the Cable Runs Vertically</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filleting-the-opening">5. Filleting the Opening</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chamfering-under-the-holder">6. Chamfering Under the Holder</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-printing-note-the-45-rule">3D Printing Note: The 45° Rule</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#patterning-the-holders">7. Patterning the Holders</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#personalizing-the-box">Personalizing the Box</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-text">8. Adding Text</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-the-text">9. Extruding the Text</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-printing-note-text-depth-and-fonts">3D Printing Note: Text Depth and Fonts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finishing-touches">Finishing Touches</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rounding-the-corners">10. Rounding the Corners</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chamfering-the-bottom">11. Chamfering the Bottom</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-printing-note-elephant-s-foot">3D Printing Note: Elephant’s Foot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-and-slicing">Exporting and Slicing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#great-job">Great Job!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-printing-holes">Bonus: Printing Holes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vertical-holes">Vertical Holes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-holes-and-the-teardrop-fix">Horizontal Holes and the Teardrop Fix</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-big-can-a-teardrop-get-before-it-looks-like-a-teardrop">How Big Can a Teardrop Get Before It Looks Like a Teardrop?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Ben Manning
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

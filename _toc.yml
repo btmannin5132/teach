@@ -42,6 +42,8 @@ chapters:
       title: "Automatic Lightswitch"
     - file: workshops/halloween
       title: "Halloween Animatronics"
+    - file: workshops/cad-printing
+      title: "CAD for 3D Printing"
 
 - file: covid
 
